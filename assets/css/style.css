@@ -903,7 +903,7 @@ footer ul li a:hover { color: #b51733; }
 .f-brand { font-size: 22px; font-weight: 800; color: #fff; }
 .f-brand span { color: #b51733; }
 .f-desc {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.8;
   margin: 12px 0 22px;
   max-width: 270px;
@@ -1518,88 +1518,134 @@ footer ul li a:hover { color: #b51733; }
 
 .toast-msg.show { opacity: 1; transform: translateY(0); }
 
-
-/* Section spacing */
-.trending-links-section {
-  padding: 30px 0;
-}
-
-/* Block spacing */
-.trending-links-block {
-  margin-bottom: 20px;
-}
-
-/* Headings */
-.trending-links-block h4 {
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-/* Text style (MAIN FIX) */
-.trending-text {
-  color: #aaa;              /* 👈 visible */
-  font-size: 12.5px;
-  line-height: 2;
-}
-
-/* Hover effect (optional subtle) */
-.trending-text:hover {
-  color: #ccc;
-}
-/* 
-footer */
+ 
+  /* ── Base ── */
   footer {
     background: #111;
-    color: #ccc;
+    color: #fff;
     padding: 60px 0 0;
   }
-  .f-brand { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -1px; }
-  .f-brand span { color: #b51733; }
-  .f-desc { font-size: 13.5px; color: #777; line-height: 1.75; margin-bottom: 22px; }
-  .soc { display: flex; gap: 10px; flex-wrap: wrap; }
-  .soc a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid #2a2a2a; display: flex; align-items: center; justify-content: center; color: #888; text-decoration: none; font-size: 14px; transition: all 0.25s; }
-  .soc a:hover { border-color: #b51733; color: #b51733; background: rgba(168,85,247,0.08); }
-  footer h5 { color: #fff; font-size: 13px; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.07em; }
-  footer ul { list-style: none; }
-  footer ul li { margin-bottom: 10px; }
-
-  footer ul li a { color: #aaa; text-decoration: none; font-size: 13px; transition: color 0.2s; display: inline-flex; align-items: center; gap: 6px; }
-  
-  footer ul li a:hover { color: #b51733;; }
-  footer ul li span { font-size: 13px; color: #666; display: flex; align-items: flex-start; gap: 6px; }
-  .f-hr { border: none; border-top: 1px solid #1e1e1e; margin: 44px 0 0; }
-
-  /* Trending Links */
-  .trending-links-section { padding: 36px 0 0; }
-  .trending-links-block { margin-bottom: 28px; }
-  .trending-links-block h4 { color: #ddd; font-size: 13px; font-weight: 700; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
-  .trending-links-list { display: flex; flex-wrap: wrap; align-items: center; line-height: 2.1; }
-  .trending-links-list a { color: #666; text-decoration: none; font-size: 12.5px; transition: color 0.2s; white-space: nowrap; }
-  .trending-links-list a:hover { color: #b51733; }
-  .trending-links-list .sep { color: #2e2e2e; margin: 0 7px; font-size: 12px; user-select: none; }
-
-  /* Disclaimer */
-  .disclaimer-block { border-top: 1px solid #1e1e1e; padding: 24px 0 0; margin-top: 8px; }
-  .disclaimer-block p {
-  color: #999;   /* 👈 FIXED */
-  font-size: 12px;
-  line-height: 1.8;
-}
-  .disclaimer-block strong { color: #555; }
-  .f-copy { text-align: center; color: #3a3a3a; font-size: 12px; padding: 18px 0 28px; border-top: 1px solid #1e1e1e; margin-top: 16px; }
-
-  @media (max-width: 768px) {
-    .row { gap: 28px; }
-    .col-lg-4, .col-lg-2, .col-lg-3 { flex: 0 0 100%; }
-    .col-6 { flex: 0 0 calc(50% - 14px); }
+ 
+  /* ── Brand ── */
+  .f-brand { margin-bottom: 16px; }
+  .f-brand img { max-height: 48px; width: auto; }
+  .f-desc {
+    font-size: 13.5px;
+    color: #fff;
+    line-height: 1.75;
+    margin-bottom: 22px;
   }
+ 
+  /* ── Social icons — FIX: Font Awesome needs <i> tags + fa lib loaded ── */
+  .soc { display: flex; gap: 10px; flex-wrap: wrap; }
+  .soc a {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    border: 1px solid #2a2a2a;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.25s;
+  }
+  .soc a:hover { border-color: #b51733; color: #b51733; }
+ 
+  /* ── Column headings ── */
   footer h5 {
-  color: #fff;
-}
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+ 
+  /* ── Nav lists ── */
+  footer ul { list-style: none; padding: 0; margin: 0; }
+  footer ul li { margin-bottom: 10px; }
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: color 0.2s;
+  }
+  footer ul li a:hover { color: #b51733; }
+  footer ul li a i,
+  footer ul li span i { color: #b51733; font-size: 13px; }
+  footer ul li span {
+    font-size: 12px;
+    color: #fff;
+    display: flex; align-items: flex-start; gap: 8px;
+    line-height: 1.6;
+  }
+ 
+  /* ── Divider ── */
+  .f-hr { border: none; border-top: 1px solid #1e1e1e; margin: 44px 0 0; }
+ 
+  /* ── Trending section ── */
+  .trending-links-section { padding: 36px 0 8px; }
+  .trending-links-block { margin-bottom: 24px; }
+  .trending-links-block h4 {
+    color: #b51733;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .trending-links-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 2.2;
+  }
+  .trending-links-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12.5px;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .trending-links-list a:hover { color: #b51733; }
+  .trending-links-list .sep {
+    color: #fff;
+    margin: 0 8px;
+    font-size: 13px;
+    user-select: none;
+  }
+ 
+  /* ── Disclaimer ── */
+  .disclaimer-block {
+    border-top: 1px solid #b51733;
+    padding: 24px 0 0;
+    margin-top: 8px;
+  }
+  .disclaimer-block p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+  .disclaimer-block strong { color: #b51733; }
+ 
+  /* ── Copyright bar ── */
+  .f-copy {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 18px 0 28px;
+    border-top: 1px solid #fff;
+    margin-top: 16px;
+  }
+ 
+  /* ── Responsive — DO NOT override Bootstrap col-6 ── */
+  @media (max-width: 576px) {
+    .trending-links-list a { white-space: normal; }
+  }
+ 
+
+
 /* enroll css */
 
 /* ════════════════════════════

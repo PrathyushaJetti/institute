@@ -97,6 +97,7 @@
 
 <!-- ═══ HERO ═══ -->
 <section class="hero-section">
+ 
   <div class="hero-left">
     <p class="section-tag">Apply · Spring 2026</p>
     <h1 class="hero-headline">
@@ -105,57 +106,233 @@
       <em>want to make.</em>
     </h1>
     <p class="hero-body">
-      No fee, no test. We read every application personally and reply within five working days. If it's a fit, you'll come in for a 30-minute conversation with the studio lead.
+      No fee, no test. We read every application personally and reply within five
+      working days. If it's a fit, you'll come in for a 30-minute conversation
+      with the studio lead.
     </p>
   </div>
-
+ 
   <div class="hero-right">
     <div class="contact-item">
       <div class="contact-cat">Studio</div>
-      <div class="contact-vall">2nd Floor, Greenland Colony,<br>Gachibowli, Hyderabad 500032</div>
+      <div class="contact-val">2nd Floor, Greenland Colony,<br>Gachibowli, Hyderabad 500032</div>
     </div>
     <div class="contact-item">
       <div class="contact-cat">Email</div>
-      <div class="contact-vall">hello@frameschool.in</div>
+      <div class="contact-val">hello@frameschool.in</div>
     </div>
     <div class="contact-item">
       <div class="contact-cat">Phone</div>
-      <div class="contact-vall">+91 9000 694 173</div>
+      <div class="contact-val">+91 9000 694 173</div>
     </div>
     <div class="contact-item">
       <div class="contact-cat">Hours</div>
-      <div class="contact-vall">Mon — Sat · 10:00 to 19:00</div>
+      <div class="contact-val">Mon — Sat · 10:00 to 19:00</div>
     </div>
   </div>
+ 
 </section>
+ 
+ 
+<!-- ════ CSS ════ -->
 <style>
+ 
+  /* ── Font variables ── */
+  :root {
+    --font-head: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+ 
+  /* ── Apply globally to this page ── */
+  body {
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+ 
+  /* ── All headings → Poppins SemiBold/Bold ── */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-head);
+    font-weight: 700;
+  }
+ 
+  /* ════ HERO SECTION ════ */
   .hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* change from minmax(0,1fr) 420px */
-  border-bottom: 1px solid rgba(0,0,0,0.12);
-  border-top: 1px solid rgba(0,0,0,0.12);
-  background: #f5ede0;
-  width: 100%;
-  max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;       /* 2 col on desktop */
+    border-top: 1px solid rgba(0,0,0,0.12);
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    background: #f5ede0;
+    width: 100%;
+  }
+ 
+  /* LEFT */
+  .hero-left {
+    padding: 4rem 3.5rem 4rem 3rem;
+    border-right: 1px solid rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #f5ede0;
+  }
+ 
+  .section-tag {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 1.25rem;
+  }
+ 
+  .hero-headline {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+  }
+ 
+  .hero-headline em {
+    font-style: italic;
+    font-weight: 600;
+    color: #b51733;
+  }
+ 
+  .hero-body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #555;
+    max-width: 420px;
+  }
+ 
+  /* RIGHT */
+  .hero-right {
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    background: #f5ede0;
+  }
+ 
+  .contact-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+ 
+  .contact-item:first-child { padding-top: 0; }
+  .contact-item:last-child  { border-bottom: none; }
+ 
+  .contact-cat {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+  }
+ 
+  .contact-val {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    color: #1a1a1a;
+    line-height: 1.55;
+  }
+ 
+  /* ════ RESPONSIVE ════ */
+ 
+  /* Tablet: 768px and below → stack vertically */
+  @media (max-width: 768px) {
+    .hero-section {
+      grid-template-columns: 1fr;        /* single column */
+    }
+ 
+    .hero-left {
+      border-right: none;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+      padding: 3rem 1.75rem 2.5rem;
+      text-align: center;
+      align-items: center;
+    }
+ 
+    .hero-body {
+      text-align: center;
+      max-width: 100%;
+    }
+ 
+    .hero-right {
+      padding: 2.5rem 1.75rem 3rem;
+    }
+  }
+ 
+  /* Mobile: 480px and below → tighter padding */
+  @media (max-width: 480px) {
+    .hero-left {
+      padding: 2.5rem 1.25rem 2rem;
+    }
+ 
+    .hero-right {
+      padding: 2rem 1.25rem 2.5rem;
+    }
+ 
+    .hero-headline {
+      font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+  }
+  /* ── Form labels ── */
+.field-label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b51733;
 }
 
-.hero-left {
-  padding: 4rem 3.5rem 4rem 3rem;
-  border-right: 1px solid rgba(0,0,0,0.12);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: #f5ede0;
+/* ── Inputs, select, textarea ── */
+.field-input,
+.field-select,
+.field-textarea {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 15px;
+  color: #1a1a1a;
 }
 
-.hero-right {
-  padding: 4rem 3rem 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: #f5ede0;
+/* ── Placeholder text ── */
+.field-input::placeholder,
+.field-textarea::placeholder {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: #bbb;
 }
+
+/* ── Disclaimer ── */
+.form-disclaimer {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 13px;
+  color: #999;
+}
+
+/* ── Send button ── */
+.btn-send {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+ 
 </style>
+ 
 <!-- ═══ FORM ═══ -->
 <section class="form-section">
   <div class="form-grid">
