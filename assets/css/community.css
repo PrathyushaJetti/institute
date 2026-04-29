@@ -121,7 +121,7 @@
 .m-person__name {
   font-family: 'Poppins', sans-serif !important;
   font-size: clamp(28px, 4.2vw, 58px);
-  font-weight: 900 !important;
+  font-weight: 700 !important;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   line-height: 1;
