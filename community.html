@@ -1,0 +1,324 @@
+<!-- ════ STYLES FOR THIS SECTION ONLY ════ -->
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap');
+
+/* ── SECTION WRAPPER ── */
+.o-people { width: 100%; background: #fff; }
+.o-people > div { width: 100%; }
+.o-people__content { display: flex; flex-direction: column; width: 100%; }
+.m-people-main { width: 100%; }
+
+/* ── TITLE ── */
+.m-people-main__top { padding: 36px 40px 18px; }
+.flame-mian-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 38px; font-weight: 800;
+  letter-spacing: .05em; text-transform: uppercase; color: #1a1a2e;
+}
+
+/* ── BOTTOM ROW: big card + thumbs ── */
+.m-people-main__bottom {
+  display: flex;
+  width: 100%;
+  height: 580px;
+}
+
+/* ── BIG CARD ── */
+.m-person {
+  flex: 1 1 0; min-width: 0; height: 100%;
+  position: relative; overflow: hidden;
+  background: #0b1826; cursor: pointer;
+}
+.m-person__image {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+}
+.m-person__image img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 18%;
+  opacity: .85;
+  transition: transform .65s ease, opacity .35s ease;
+}
+.m-person:hover .m-person__image img {
+  transform: scale(1.035);
+  opacity: .9;
+}
+.m-person__caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 80px 40px 36px;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.95) 0%,
+    rgba(0,0,0,.75) 35%,
+    rgba(0,0,0,.3)  60%,
+    transparent     100%
+  );
+  color: #fff;
+  z-index: 10;
+}
+.m-person__category { margin-bottom: 16px; }
+.m-person__category span {
+  display: inline-block;
+  background: #f5a623; color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase;
+  padding: 6px 16px;
+}
+.m-person__name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(34px, 4.8vw, 62px); font-weight: 900;
+  letter-spacing: .04em; text-transform: uppercase;
+  line-height: 1; color: #fff; margin-bottom: 12px;
+}
+.m-person__major {
+  font-size: 14px; color: rgba(255,255,255,.82);
+  line-height: 1.6; margin-bottom: 2px;
+}
+.m-person__major a { color: #f5a623; font-weight: 600; }
+.m-person__major a:hover { text-decoration: underline; }
+.m-person__button {
+  display: flex; align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 22px; gap: 16px;
+}
+.l_hp__overview_btn {
+  display: inline-block;
+  border: 1.5px solid rgba(255,255,255,.6); color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: .15em; text-transform: uppercase;
+  padding: 10px 28px;
+  transition: background .2s, border-color .2s;
+  white-space: nowrap;
+}
+.l_hp__overview_btn:hover { background: rgba(255,255,255,.15); border-color: #fff; }
+
+/* Everlasting badge */
+.everlasting-happning img,
+.everlasting-distinctive-combi img,
+.everlasting-alumni-in-focus img,
+.everlasting-study-abroad img {
+  height: 64px; width: auto; opacity: .95;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.4));
+}
+
+/* ── THUMB PANEL ── */
+.m-people-thumbs {
+  width: 380px; flex-shrink: 0; height: 100%;
+}
+.m-people-thumbs__content {
+  width: 100%; height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0;
+}
+.m-people-thumbs__button {
+  width: 100%; height: 100%;
+  background-size: cover; background-position: center 18%;
+  border: none; cursor: pointer;
+  outline: 3px solid transparent; outline-offset: -3px;
+  filter: brightness(.72) saturate(.9);
+  transition: filter .25s ease, outline-color .2s;
+  padding: 0; position: relative;
+}
+.m-people-thumbs__button:hover {
+  filter: brightness(1.05) saturate(1.1);
+  z-index: 1;
+}
+.m-people-thumbs__button[aria-selected="true"] {
+  outline: 3px solid #f5a623;
+  outline-offset: -3px;
+  filter: brightness(1) saturate(1.1);
+  z-index: 2;
+}
+
+/* ── LINKS BAR ── */
+.flame-links-wrap { width: 100%; }
+.flame-sl-more_list {
+  display: flex; list-style: none;
+  border-top: 1px solid #ddd;
+  height: 52px; align-items: stretch;
+}
+.flame-sl-more_li { display: flex; }
+.flame-sl-more_li a {
+  display: flex; align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: #1a1a2e; padding: 0 32px;
+  border-right: 1px solid #ddd;
+  transition: color .2s, background .2s;
+  white-space: nowrap;
+}
+.flame-sl-more_li:last-child a { border-right: none; }
+.flame-sl-more_li a:hover { color: #0047ab; background: #f4f7fb; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1220px) {
+  .m-people-main__bottom { height: 520px; }
+  .m-people-thumbs { width: 320px; }
+  .flame-mian-title { font-size: 32px; }
+}
+@media (max-width: 960px) {
+  .m-people-main__bottom { flex-direction: column; height: auto; }
+  .m-person { flex: none; width: 100%; height: 62vw; min-height: 320px; }
+  .m-people-thumbs { width: 100%; height: auto; }
+  .m-people-thumbs__content {
+    width: 100%; height: 160px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .m-people-main__top { padding: 24px 20px 14px; }
+  .flame-sl-more_list { flex-wrap: wrap; height: auto; }
+  .flame-sl-more_li a { padding: 12px 16px; font-size: 11px; }
+}
+@media (max-width: 600px) {
+  .m-person { height: 72vw; }
+  .m-people-thumbs__content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 220px;
+  }
+  .flame-mian-title { font-size: 26px; }
+  .m-person__name { font-size: 28px; }
+}
+</style>
+
+<!-- ════ OUR COMMUNITY OF DOERS ════ -->
+<section class="o-people">
+  <div>
+    <div class="o-people__content">
+      <div class="m-people-main">
+
+        <div class="m-people-main__top">
+          <h2 class="flame-mian-title">OUR COMMUNITY OF DOERS</h2>
+        </div>
+
+        <div class="m-people-main__bottom">
+
+          <!-- BIG CARD -->
+          <div class="m-person" id="bigPerson" role="tabpanel" tabindex="0">
+            <div class="m-person__image">
+              <img id="bigImg" src="" alt="">
+            </div>
+            <div class="m-person__caption">
+              <div class="m-person__bio">
+                <div class="m-person__category">
+                  <a href="#"><span id="bigCat"></span></a>
+                </div>
+                <div class="m-person__biocontent">
+                  <h3 class="m-person__name" id="bigName"></h3>
+                  <div id="bigMajors"></div>
+                </div>
+              </div>
+              <div class="m-person__button">
+                <p><a class="l_hp__overview_btn" href="#" id="bigBtn">Read More</a></p>
+                <div id="bigEverlasting"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMB PANEL -->
+          <div class="m-people-thumbs" aria-label="People" role="tablist">
+            <div class="m-people-thumbs__content" id="thumbsContent"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LINKS BAR -->
+      <div class="flame-links-wrap">
+        <ul class="flame-sl-more_list">
+          <li class="flame-sl-more_li"><a href="https://www.flame.edu.in/happenings">Happenings</a></li>
+          <li class="flame-sl-more_li"><a href="https://www.flame.edu.in/admissions/student-experiences/">Distinctive Combinations</a></li>
+          <li class="flame-sl-more_li"><a href="https://www.flame.edu.in/admissions/alumni-achievements/">Alumni in Focus</a></li>
+          <li class="flame-sl-more_li"><a href="https://www.flame.edu.in/global-connect/study-abroad/experiences">Study Abroad Stories</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ JS ════ -->
+<script>
+const BASE = 'https://www.flame.edu.in';
+
+const people = [
+  { id:'p46', cat:'Happenings', catHref:BASE+'/happenings', name:'Ujjwal Kumar', lines:['Ujjwal Kumar at the India AI Impact Summit 2026'], isMajor:false, btn:'Read More', btnHref:BASE+'/happenings/ujjwal-kumar-at-the-india-ai-impact-summit-2026', evClass:'everlasting-happning', evImg:BASE+'/images/happenings/everlasting-knowledge.png', img:BASE+'/images/happenings/homepage/ujjwal-kumar.jpg' },
+  { id:'p45', cat:'Happenings', catHref:BASE+'/happenings', name:'Atharva Shrivastava', lines:['Interdisciplinarity, Indian Premier League, and International Sport: A Journey into the Industry'], isMajor:false, btn:'Read More', btnHref:BASE+'/happenings/interdisciplinarity-indian-premier-league-and-international-sport-a-journey-into-the-industry', evClass:'everlasting-happning', evImg:BASE+'/images/happenings/everlasting-knowledge.png', img:BASE+'/images/happenings/atharva-shrivastava-happening.jpg' },
+  { id:'p44', cat:'Happenings', catHref:BASE+'/happenings', name:'Akshaya D', lines:['Akshaya D on Representing FLAME University at the Harvard Conference 2025'], isMajor:false, btn:'Read More', btnHref:BASE+'/happenings/akshaya-d-on-representing-flame-university-at-the-harvard-conference-2025', evClass:'everlasting-happning', evImg:BASE+'/images/happenings/everlasting-knowledge.png', img:BASE+'/images/happenings/homepage/akshaya-d.jpg' },
+  { id:'dc27', cat:'Distinctive Combinations', catHref:BASE+'/admissions/student-experiences/', name:'Sanvi Madan', lines:[['Environmental Studies',BASE+'/academics/ug/program-structure/major-minor-courses/environmental-studies','Major'],['Public Policy',BASE+'/academics/ug/program-structure/major-minor-courses/public-policy','Minor']], isMajor:true, btn:'Read More', btnHref:BASE+'/admissions/student-experiences/sanvi-madan', evClass:'everlasting-distinctive-combi', evImg:BASE+'/images/student%20experiences/everlasting-knowledge.png', img:BASE+'/images/student%20experiences/homepage/Sanvi-Madan-home.jpg' },
+  { id:'dc3', cat:'Distinctive Combinations', catHref:BASE+'/admissions/student-experiences/', name:'Nandini Mehta', lines:[['Economics',BASE+'/academics/ug/program-structure/major-minor-courses/economics','Major'],['Finance',BASE+'/academics/ug/program-structure/major-minor-courses/finance','Minor']], isMajor:true, btn:'Read More', btnHref:BASE+'/admissions/student-experiences/nandini-mehta', evClass:'everlasting-distinctive-combi', evImg:BASE+'/images/student%20experiences/everlasting-knowledge.png', img:BASE+'/images/student%20experiences/nandini-mehta-2.jpg' },
+  { id:'dc2', cat:'Distinctive Combinations', catHref:BASE+'/admissions/student-experiences/', name:'Saumya Sampath', lines:[['International Studies',BASE+'/academics/ug/program-structure/major-minor-courses/international-studies','&amp;'],['Digital Marketing',BASE+'/academics/ug/program-structure/major-minor-courses/digital-marketing','Major']], isMajor:true, btn:'Read More', btnHref:BASE+'/admissions/student-experiences/saumya-sampath', evClass:'everlasting-distinctive-combi', evImg:BASE+'/images/homepage-slider/Everlasting-Knowledge.png', img:BASE+'/images/student%20experiences/saumya%20sampat-2.jpg' },
+  { id:'a3', cat:'Alumni in Focus', catHref:BASE+'/admissions/alumni-achievements/', name:'Taanya Malhotra', lines:['Major: Film &amp; TV','Minor: Advertising &amp; Branding'], isMajor:false, btn:'Know More', btnHref:BASE+'/admissions/alumni-achievements/', evClass:'everlasting-alumni-in-focus', evImg:BASE+'/images/homepage-slider/Everlasting-Connections.png', img:BASE+'/images/alumni%20achievements/homepage/tanya%20malhotra-2.jpg' },
+  { id:'a2', cat:'Alumni in Focus', catHref:BASE+'/admissions/alumni-achievements/', name:'Vrinda Chokhani', lines:['Major: Finance','Minor: Economics'], isMajor:false, btn:'Know More', btnHref:BASE+'/admissions/alumni-achievements/', evClass:'everlasting-alumni-in-focus', evImg:BASE+'/images/homepage-slider/Everlasting-Connections.png', img:BASE+'/images/alumni%20achievements/homepage/vrinda-chokhani-2.jpg' },
+  { id:'a1', cat:'Alumni in Focus', catHref:BASE+'/admissions/alumni-achievements/', name:'Aditya Ashok Balu', lines:['Major: International Studies','Minor: Environmental Studies'], isMajor:false, btn:'Know More', btnHref:BASE+'/admissions/alumni-achievements/', evClass:'everlasting-alumni-in-focus', evImg:BASE+'/images/homepage-slider/Everlasting-Connections.png', img:BASE+'/images/alumni%20achievements/homepage/aditya%20balu-2.jpg' },
+  { id:'sb30', cat:'Study Abroad Stories', catHref:BASE+'/global-connect/study-abroad/experiences', name:'Rajvi Jhaveri', lines:['FLAME University','Semester abroad — School of Business'], isMajor:false, btn:'Know More', btnHref:BASE+'/global-connect/study-abroad/experiences/rajvi-jhaveri', evClass:'everlasting-study-abroad', evImg:BASE+'/images/homepage-slider/Everlasting-Experiences.png', img:BASE+'/images/study%20abroad%20experiences/Rajvi-Jhaveri.jpg' },
+  { id:'sb29', cat:'Study Abroad Stories', catHref:BASE+'/global-connect/study-abroad/experiences', name:'Dhriti Sumanth', lines:['FLAME University','Semester abroad @Wellesley College, USA'], isMajor:false, btn:'Know More', btnHref:BASE+'/global-connect/study-abroad/experiences/dhriti-sumanth', evClass:'everlasting-study-abroad', evImg:BASE+'/images/homepage-slider/Everlasting-Experiences.png', img:BASE+'/images/study%20abroad%20experiences/Dhriti-Sumanth-01.jpg' },
+  { id:'sb3', cat:'Study Abroad Stories', catHref:BASE+'/global-connect/study-abroad/experiences', name:'Manojna Lanka', lines:['FLAME University','Semester abroad @Wellesley College, USA'], isMajor:false, btn:'Know More', btnHref:BASE+'/global-connect/study-abroad/experiences/manojna-lanka', evClass:'everlasting-study-abroad', evImg:BASE+'/images/homepage-slider/Everlasting-Experiences.png', img:BASE+'/images/study%20abroad%20experiences/manojna-lanka.jpg' }
+];
+
+let active = 1, timer;
+
+function showPerson(idx) {
+  active = idx;
+  const p = people[idx];
+  const img = document.getElementById('bigImg');
+  img.style.transition = 'opacity .35s ease';
+  img.style.opacity = '0';
+  setTimeout(() => {
+    img.src = p.img; img.alt = p.name;
+    img.onload = () => { img.style.opacity = '.85'; };
+    if (img.complete) img.style.opacity = '.85';
+  }, 200);
+  document.getElementById('bigCat').textContent = p.cat;
+  document.getElementById('bigCat').parentElement.href = p.catHref;
+  document.getElementById('bigName').textContent = p.name;
+  document.getElementById('bigBtn').textContent = p.btn;
+  document.getElementById('bigBtn').href = p.btnHref;
+  const evEl = document.getElementById('bigEverlasting');
+  evEl.className = p.evClass;
+  evEl.innerHTML = `<img src="${p.evImg}" alt="FLAME Everlasting">`;
+  const mEl = document.getElementById('bigMajors');
+  mEl.innerHTML = p.isMajor
+    ? p.lines.map(([s,h,t]) => `<p class="m-person__major"><a href="${h}">${s}</a> ${t}</p>`).join('')
+    : p.lines.map(l => `<p class="m-person__major">${l}</p>`).join('');
+  document.querySelectorAll('.m-people-thumbs__button').forEach((btn,i) => {
+    btn.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+  });
+}
+
+function buildThumbs() {
+  const c = document.getElementById('thumbsContent');
+  c.innerHTML = people.map((p,i) => `
+    <button class="m-people-thumbs__button"
+      style="background-image:url('${p.img}');"
+      aria-selected="${i === active ? 'true' : 'false'}"
+      role="tab" tabindex="0" data-idx="${i}" title="${p.name}">
+      <span class="sr-only">${p.name}</span>
+    </button>`).join('');
+  c.querySelectorAll('.m-people-thumbs__button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      clearInterval(timer);
+      showPerson(+btn.dataset.idx);
+      startAuto();
+    });
+  });
+}
+
+function startAuto() {
+  clearInterval(timer);
+  timer = setInterval(() => showPerson((active + 1) % people.length), 4500);
+}
+
+buildThumbs();
+showPerson(active);
+startAuto();
+</script>

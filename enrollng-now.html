@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frame school of design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/community.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+      <!-- LEFT -->
+      <div class="d-flex gap-4 flex-wrap">
+        
+        <span>
+          <i class="fas fa-clock"></i>
+          Mon–Sat: 08:30 AM – 07:00 PM
+        </span>
+
+        <span>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:fsd@gmail.com">fsd@gmail.com</a>
+        </span>
+
+        <span>
+          <i class="fas fa-phone"></i>
+          <a href="tel:+919004801100">+91 9004801100</a>
+        </span>
+
+      </div>
+
+      <!-- RIGHT (optional address or remove if not needed) -->
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="brand-logo" href="#">
+      <img src="./assets/img/logo-1.png">
+    </a>
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Frame</a></li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Courses</a>
+          <ul class="dropdown-menu">
+            <li><a href="./ppp.html">ppp</a></li>
+            <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
+            <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+            <li><a class="dropdown-item" href="#">Full Stack Development</a></li>
+            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Placements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+      <div class="d-flex gap-3 mt-3 mt-lg-0 align-items-center">
+        <!-- <button class="btn-nav-login">Login</button> -->
+        <a href="contact-us.html" class="btn-nav-reg">Enroll</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+
+<!-- ═══ CONTACT DETAILS ═══ -->
+
+
+
+
+
+
+<!-- ═══ NAVBAR ═══ -->
+
+
+<!-- ═══ HERO ═══ -->
+<section class="hero-section">
+  <div class="hero-left">
+    <p class="section-tag">Apply · Spring 2026</p>
+    <h1 class="hero-headline">
+      Tell us<br>
+      what you<br>
+      <em>want to make.</em>
+    </h1>
+    <p class="hero-body">
+      No fee, no test. We read every application personally and reply within five working days. If it's a fit, you'll come in for a 30-minute conversation with the studio lead.
+    </p>
+  </div>
+
+  <div class="hero-right">
+    <div class="contact-item">
+      <div class="contact-cat">Studio</div>
+      <div class="contact-vall">2nd Floor, Greenland Colony,<br>Gachibowli, Hyderabad 500032</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-cat">Email</div>
+      <div class="contact-vall">hello@frameschool.in</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-cat">Phone</div>
+      <div class="contact-vall">+91 9000 694 173</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-cat">Hours</div>
+      <div class="contact-vall">Mon — Sat · 10:00 to 19:00</div>
+    </div>
+  </div>
+</section>
+<style>
+  .hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* change from minmax(0,1fr) 420px */
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  border-top: 1px solid rgba(0,0,0,0.12);
+  background: #f5ede0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-left {
+  padding: 4rem 3.5rem 4rem 3rem;
+  border-right: 1px solid rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #f5ede0;
+}
+
+.hero-right {
+  padding: 4rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #f5ede0;
+}
+</style>
+<!-- ═══ FORM ═══ -->
+<section class="form-section">
+  <div class="form-grid">
+
+    <div class="form-field">
+      <label class="field-label" for="f-name">01 / Your name</label>
+      <input class="field-input" id="f-name" type="text" placeholder="Aarav Mehta">
+    </div>
+
+    <div class="form-field">
+      <label class="field-label" for="f-email">02 / Email</label>
+      <input class="field-input" id="f-email" type="email" placeholder="you@studio.com">
+    </div>
+
+    <div class="form-field">
+      <label class="field-label" for="f-phone">03 / Phone</label>
+      <input class="field-input" id="f-phone" type="tel" placeholder="+91 ...">
+    </div>
+
+    <div class="form-field">
+      <label class="field-label" for="f-programme">04 / Programme</label>
+      <select class="field-select" id="f-programme">
+        <option>UI/UX Design</option>
+        <option>Graphic Design</option>
+        <option>3D &amp; Motion</option>
+        <option>VFX &amp; Compositing</option>
+        <option>Not sure yet</option>
+      </select>
+    </div>
+
+    <div class="form-field full-width">
+      <label class="field-label" for="f-why">05 / Why design? (a paragraph is plenty)</label>
+      <textarea class="field-textarea" id="f-why" placeholder="A few sentences about what's pulling you toward this..."></textarea>
+    </div>
+
+    <div class="form-divider"></div>
+    <div class="form-divider" style="border-bottom:none; border-top: 1px solid var(--border); margin-top:-1px;"></div>
+
+  </div>
+
+  <div class="form-footer">
+    <p class="form-disclaimer">By applying you're saying it's okay for us to write back. Nothing more.</p>
+    <button class="btn-send" id="sendBtn">Send Application →</button>
+  </div>
+</section>
+
+<div class="toast" id="toast">Application sent. We'll be in touch.</div>
+
+</div><!-- end page-wrapper -->
+
+<script>
+  document.getElementById('sendBtn').addEventListener('click', () => {
+    const name = document.getElementById('f-name').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    if (!name || !email) {
+      alert('Please fill in at least your name and email.');
+      return;
+    }
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3500);
+  });
+</script>
+
+
+
+
+
+<!-- FOOTER -->
+
+<!-- Font Awesome in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<!-- CSS -->
+
+
+<!-- HTML -->
+<footer>
+  <div class="container">
+
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="f-brand">Beet<span>sl</span></div>
+        <p class="f-desc">Hyderabad's leading UI/UX & Design academy. Learn in Telugu, work on live projects, and get placed in top companies.</p>
+        <div class="soc">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Frame</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Journey</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Courses</h5>
+        <ul>
+          <li><a href="#">UI/UX Designing</a></li>
+          <li><a href="#">Graphic Designing</a></li>
+          <li><a href="#">Full Stack Development</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Python</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Contact Us</h5>
+        <ul>
+          <li><a href="mailto:Info@beetsl.com"><i class="fas fa-envelope" style="color:#b51733;"></i>Info@beetsl.com</a></li>
+          <li><a href="tel:+919000694173"><i class="fas fa-phone" style="color:#b51733;"></i>+91 9000-694-173</a></li>
+          <li><span><i class="fas fa-map-marker-alt" style="color:#b51733;margin-top:3px;"></i>2nd Floor, Greenland Colony, Gachibowli, Hyderabad</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="f-hr"/>
+
+    <!-- <div class="trending-links-section">
+
+      <div class="trending-links-block">
+        <h4>Trending Courses</h4>
+        <div class="trending-links-list">
+          <a href="https://www.infosectrain.com/courses/cissp-certification-training">CISSP Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/cisa-certification-training">CISA Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/cism-certification-training">CISM Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/certified-ethical-hacker-ceh-training">Ethical Hacker Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/crisc-certification-training">CRISC Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/ccsp-certification-training">CCSP Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/comptia-security">CompTIA Security+ Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/az-500-microsoft-azure-security-technologies-training">AZ-500 Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/advanced-penetration-testing-online-training-course">Penetration Testing Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/cyberark-training">CyberArk Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/certified-information-privacy-technologist-cipt-training">CIPT Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/certified-information-privacy-manager-cipm-training">CIPM Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/european-privacy-training-cippe">European Privacy (CIPP/E) Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/iso27001la">ISO 27001 Lead Auditor Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/gdpr">GDPR Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/aws-combo-course-training">AWS Combo Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/sailpoint-training">SailPoint Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/azure-sentinel-training">Microsoft Sentinel Online Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/certificate-cloud-security-knowledge-ccsk">Certificate of Cloud Security Knowledge (CCSK Plus) Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/soc-analyst-training">SOC Analyst Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/soc-specialist-training">SOC Specialist</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/rsa-archer-training">RSA Archer Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/azure-security-combo-training">Azure Administrator & Security Online Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/sailpoint-training">Sailpoint IdentityIQ Implementation Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/certified-ethical-hacker-ceh-training">Certified Ethical Hacker Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/european-privacy-training-cippe">CIPP/E Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/iso27001li">ISO 27001 Lead Implementer Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/comptia-cysa-certification-training">CYSA+ Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/data-protection-officer-training">Data Protection Officer (DPO)</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/cloud-governance-security-training">Advanced Cloud Security Governance</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/grc-online-training">GRC (Governance, Risk and Compliance) Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/courses/splunk-training">Splunk Training Course</a>
+        </div>
+      </div>
+
+      <div class="trending-links-block">
+        <h4>Trending Categories</h4>
+        <div class="trending-links-list">
+          <a href="https://www.infosectrain.com/grc-training-courses">Governance Risk & Compliance Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/cloud-security-certification-training">Cloud Security Training Courses</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/cybersecurity-certification-training">Cybersecurity Training Courses</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/information-security-certification-training-course">Information Security Training Courses</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/security-operations-center-soc-training-courses">SOC Online Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/security-testing">Security Testing Training Programs</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/data-privacy">Data Privacy Training Courses</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/audit-training-courses">IT & Security Audit Training Programs</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/security-product-training-courses">Security Products Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/network-security-training-courses">Network Security Training Courses</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/offensive-security-training-courses">Offensive Security Training Courses</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/defensive-security-training-courses">Defensive Security Training Courses</a>
+        </div>
+      </div>
+
+      <div class="trending-links-block">
+        <h4>Trending Free Resources</h4>
+        <div class="trending-links-list">
+          <a href="https://www.infosectrain.com/free-cybersecurity-training">Free Cybersecurity Training</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/events">Free Upcoming Bootcamps</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/free-practice-tests">Free Mock Tests</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/blog">Latest Blogs</a><span class="sep">|</span>
+          <a href="https://www.infosectrain.com/news">Latest Cyber News</a>
+        </div>
+      </div>
+
+    </div> -->
+<div class="trending-links-section">
+
+  <!-- COURSES -->
+  <div class="trending-links-block">
+    <h4>Trending Courses</h4>
+    <p class="trending-text">
+      CISSP Training | CISA Training | CISM Training | Ethical Hacker Training | CRISC Training | CCSP Training | CompTIA Security+ Training | AZ-500 Training | Penetration Testing Training | CyberArk Training | CIPT Training | CIPM Training | European Privacy (CIPP/E) Training | ISO 27001 Lead Auditor Training | GDPR Training | AWS Combo Training | SailPoint Training | Microsoft Sentinel Training | CCSK Plus Training | SOC Analyst Training | SOC Specialist | RSA Archer Training | Azure Administrator & Security Training | IdentityIQ Training | CEH Training | ISO 27001 Lead Implementer | CYSA+ Training | Data Protection Officer (DPO) | Cloud Security Governance | GRC Training | Splunk Training Course
+    </p>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="trending-links-block">
+    <h4>Trending Categories</h4>
+    <p class="trending-text">
+      Governance Risk & Compliance Training | Cloud Security Training Courses | Cybersecurity Training Courses | Information Security Training Courses | SOC Online Training | Security Testing Training Programs | Data Privacy Training Courses | IT & Security Audit Training Programs | Security Products Training | Network Security Training Courses | Offensive Security Training Courses | Defensive Security Training Courses
+    </p>
+  </div>
+
+  <!-- RESOURCES -->
+  <div class="trending-links-block">
+    <h4>Trending Free Resources</h4>
+    <p class="trending-text">
+      Free Cybersecurity Training | Free Upcoming Bootcamps | Free Mock Tests | Latest Blogs | Latest Cyber News
+    </p>
+  </div>
+
+</div>
+    <div class="disclaimer-block">
+      <p><strong>Disclaimer:</strong> Some of the graphics on our website are from public domains and are freely available. This website may include copyright content, use of which may not have been explicitly authorized by the copyright owner. The names, trademarks, and brands of all products are the property of their respective owners. The certification names are trademarks of the companies that own them. This website's company, product, and service names are solely for identification reasons. We don't own them, don't hold the copyright to them, and haven't sought any kind of permission. The use of these names, logos, and trademarks does not indicate that they are endorsed. Please contact us for additional details.</p>
+      <p><strong>CISSP® is a registered mark of The International Information Systems Security Certification Consortium ((ISC)2).</strong></p>
+      <p><strong>This website uses cookies:</strong> Our website utilizes cookies to gather information such as your IP address and browsing history, such as the websites you've visited and the amount of time you've spent on each page, and to remember your settings and preferences. Other cookies enable us to track Website traffic and users' interactions with the site; we use this information to analyze visitor behavior and improve the site's overall experience.</p>
+      <p>All rights reserved. © 2026, InfosecTrain (A Brand of AZPIRANTZ TECHNOLOGIES LLP)</p>
+    </div>
+
+    <p class="f-copy">© 2025 Beetsl. All rights reserved. | Designed with ❤ in Hyderabad</p>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Category tag toggle
+  document.querySelectorAll('.c-tag').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.c-tag').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+    });
+  });
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); obs.unobserve(e.target); } });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+  // Navbar white bg only when scrolled
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

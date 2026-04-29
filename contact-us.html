@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply — Frame School of Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f5ede0;
+    --text: #1a1a1a;
+    --muted: #999;
+    --accent: #b83228;
+    --border: rgba(0,0,0,0.12);
+  }
+
+
+
+ 
+
+
+
+  /* ════════════════════════════
+     HERO
+  ════════════════════════════ */
+  .hero-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-left {
+    padding: 7rem 3.5rem 6rem 3rem;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .section-tag {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: #b51733;
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .section-tag::before { content: '✦'; }
+
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.8rem, 7vw, 6.4rem);
+    font-weight: 900;
+    line-height: 1.0;
+    color: var(--text);
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-headline em {
+    font-style: italic;
+    font-weight: 900;
+  }
+
+  .hero-body {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.8;
+    max-width: 380px;
+  }
+
+  .hero-right {
+    padding: 4rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .contact-item {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .contact-item:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .contact-cat {
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .contact-val {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+    font-weight: 600;
+  }
+
+  /* ════════════════════════════
+     FORM
+  ════════════════════════════ */
+  .form-section {
+    padding: 0 3rem 5rem;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--border);
+  }
+
+  .form-field {
+    padding: 2.8rem 3rem 2.8rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .form-field:nth-child(even) {
+    padding-left: 3rem;
+    padding-right: 0;
+    border-left: 1px solid var(--border);
+  }
+
+  .form-field.full-width {
+    grid-column: 1 / -1;
+    padding-right: 0;
+    border-left: none !important;
+  }
+
+  .field-label {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    color: #b51733;
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .field-input,
+  .field-select,
+  .field-textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    width: 100%;
+    padding: 6px 0 10px;
+    font-size: 15px;
+    color: var(--text);
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    transition: border-color 0.2s;
+    border-radius: 0;
+  }
+
+  .field-input::placeholder,
+  .field-textarea::placeholder {
+    color: #c0b8ae;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .field-input:focus,
+  .field-select:focus,
+  .field-textarea:focus {
+    border-bottom-color: var(--text);
+  }
+
+  .field-select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' stroke='%23999' stroke-width='1.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+  }
+
+  .field-textarea {
+    resize: none;
+    min-height: 90px;
+    line-height: 1.75;
+  }
+
+  .form-divider {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.8rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .form-disclaimer {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 320px;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    text-transform: uppercase;
+  }
+
+  .form-disclaimer::before {
+    content: '✦';
+    font-size: 8px;
+    color: #b51733;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  .btn-send {
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    padding: 16px 32px;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s;
+  }
+
+  .btn-send:hover { background: #2e2e2e; }
+
+  /* ════════════════════════════
+     RESPONSIVE
+  ════════════════════════════ */
+  @media (max-width: 960px) {
+    .navbar { padding: 0 2rem; }
+    .nav-links { gap: 1.6rem; }
+    .hero-section { grid-template-columns: 1fr; }
+    .hero-left { border-right: none; border-bottom: 1px solid var(--border); padding: 3.5rem 2rem; }
+    .hero-right { padding: 2.5rem 2rem; }
+    .form-section { padding: 0 2rem 4rem; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-intake { display: none; }
+  }
+
+  @media (max-width: 640px) {
+    .hero-headline { font-size: 3.4rem; }
+    .form-grid { grid-template-columns: 1fr; }
+    .form-field:nth-child(even) { padding-left: 0; border-left: none; }
+    .form-field { padding: 2rem 0; }
+    .form-footer { flex-direction: column; align-items: flex-start; }
+    .btn-send { width: 100%; justify-content: center; }
+  }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--text);
+    color: var(--bg);
+    padding: 14px 24px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.35s;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .toast.show { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+
+<!-- ═══ NAVBAR ═══ -->
+
+
+<!-- ═══ HERO ═══ -->
+<section class="hero-section">
+
+  <div class="hero-left">
+    <p class="section-tag">Apply · Spring 2026</p>
+    <h1 class="hero-headline">
+      Tell us<br>
+      what you<br>
+      <em>want to make.</em>
+    </h1>
+    <p class="hero-body">
+      No fee, no test. We read every application personally and reply within five working days. If it's a fit, you'll come in for a 30-minute conversation with the studio lead.
+    </p>
+  </div>
+
+  <div class="hero-right">
+    <div class="contact-item">
+      <div class="contact-cat">Studio</div>
+      <div class="contact-val">2nd Floor, Greenland Colony,<br>Gachibowli, Hyderabad 500032</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-cat">Email</div>
+      <div class="contact-val">hello@frameschool.in</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-cat">Phone</div>
+      <div class="contact-val">+91 9000 694 173</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-cat">Hours</div>
+      <div class="contact-val">Mon — Sat · 10:00 to 19:00</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══ FORM ═══ -->
+<section class="form-section">
+  <div class="form-grid">
+
+    <div class="form-field">
+      <label class="field-label" for="f-name">01 / Your name</label>
+      <input class="field-input" id="f-name" type="text" placeholder="Aarav Mehta">
+    </div>
+
+    <div class="form-field">
+      <label class="field-label" for="f-email">02 / Email</label>
+      <input class="field-input" id="f-email" type="email" placeholder="you@studio.com">
+    </div>
+
+    <div class="form-field">
+      <label class="field-label" for="f-phone">03 / Phone</label>
+      <input class="field-input" id="f-phone" type="tel" placeholder="+91 ...">
+    </div>
+
+    <div class="form-field">
+      <label class="field-label" for="f-programme">04 / Programme</label>
+      <select class="field-select" id="f-programme">
+        <option>UI/UX Design</option>
+        <option>Graphic Design</option>
+        <option>3D &amp; Motion</option>
+        <option>VFX &amp; Compositing</option>
+        <option>Not sure yet</option>
+      </select>
+    </div>
+
+    <div class="form-field full-width">
+      <label class="field-label" for="f-why">05 / Why design? (a paragraph is plenty)</label>
+      <textarea class="field-textarea" id="f-why" placeholder="A few sentences about what's pulling you toward this..."></textarea>
+    </div>
+
+    <div class="form-divider"></div>
+    <div class="form-divider" style="border-bottom:none; border-top: 1px solid var(--border); margin-top:-1px;"></div>
+
+  </div>
+
+  <div class="form-footer">
+    <p class="form-disclaimer">By applying you're saying it's okay for us to write back. Nothing more.</p>
+    <button class="btn-send" id="sendBtn">Send Application →</button>
+  </div>
+</section>
+
+<div class="toast" id="toast">Application sent. We'll be in touch.</div>
+
+</div><!-- end page-wrapper -->
+
+<script>
+  document.getElementById('sendBtn').addEventListener('click', () => {
+    const name = document.getElementById('f-name').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    if (!name || !email) {
+      alert('Please fill in at least your name and email.');
+      return;
+    }
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3500);
+  });
+</script>
+</body>
+</html>
