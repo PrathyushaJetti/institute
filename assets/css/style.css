@@ -15,7 +15,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -591,7 +591,7 @@ img { max-width: 100%; height: auto; display: block; }
   line-height: 1.2;
   margin-bottom: 16px;
 }
-.gi-title .hi { color: #22d3ee; }
+.gi-title .hi { color: #b51733 }
 .gi-subtitle {
   font-size: 15px;
   color: rgba(255,255,255,.42);
@@ -671,7 +671,7 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
   z-index: 1;
 }
-.ln.c { color: #22d3ee; } .ln.o { color: #f97316; } .ln.b { color: #60a5fa; }
+.ln.c { color: #b51733 } .ln.o { color: #f97316; } .ln.b { color: #60a5fa; }
 .ln.p { color: #c084fc; } .ln.r { color: #f87171; } .ln.g { color: #4ade80; }
 .ln.y { color: #facc15; } .ln.w { color: rgba(255,255,255,.75); }
 
@@ -739,20 +739,34 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ══════════════════════════════════
-   TESTIMONIALS
+   TESTIMONIALS — Fixed
+   Fonts: Poppins (headings) · Inter (body)
 ══════════════════════════════════ */
+
 :root {
-  --bg: #0d0d0d;
-  --card: #141414;
+  --bg:     #0d0d0d;
+  --card:   #141414;
   --accent: #e87c3e;
-  --accent2: #4f9cf9;
-  --text: #e8e8e8;
-  --muted: #666;
-  --star: #f5a623;
+  --accent2:#4f9cf9;
+  --text:   #e8e8e8;
+  --muted:  #666;
+  --star:   #f5a623;
   --border: rgba(255,255,255,0.07);
 }
 
-.sec-head { padding: 72px 24px 48px; text-align: center; }
+/* ── Section wrapper ── */
+.gi-section {
+  background: var(--bg);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ── Section header ── */
+.sec-head {
+  padding: 72px 24px 48px;
+  text-align: center;
+}
+
 .eyebrow {
   display: flex;
   align-items: center;
@@ -760,40 +774,49 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 10px;
   margin-bottom: 14px;
 }
+
 .eyebrow span {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;   /* Poppins for label */
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #b51733;
 }
+
 .sec-head h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(28px, 5vw, 50px);
-  font-weight: 800;
+  font-family: 'Poppins', sans-serif;   /* Poppins Bold heading */
+  font-size: clamp(26px, 4.5vw, 48px);
+  font-weight: 700;
   background: linear-gradient(135deg, #fff 40%, #b51733 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 12px;
-  line-height: 1.1;
+  margin-bottom: 14px;
+  line-height: 1.15;
 }
+
 .sub {
+  font-family: 'Inter', sans-serif;     /* Inter for body */
+  font-weight: 400;
   color: var(--muted);
   font-size: 15px;
   max-width: 520px;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
+/* ── Columns outer ── */
 .cols-outer {
   position: relative;
   padding: 0 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
-.cols-outer::before, .cols-outer::after {
+
+/* Fade top & bottom */
+.cols-outer::before,
+.cols-outer::after {
   content: '';
   position: absolute;
   left: 0; right: 0;
@@ -811,6 +834,7 @@ img { max-width: 100%; height: auto; display: block; }
   background: linear-gradient(to top, var(--bg), transparent);
 }
 
+/* ── Scrolling columns ── */
 .cols-wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -820,9 +844,14 @@ img { max-width: 100%; height: auto; display: block; }
   overflow: hidden;
 }
 
-.col { display: flex; flex-direction: column; gap: 18px; will-change: transform; }
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  will-change: transform;
+}
 
-/* Testimonial Card */
+/* ── Testimonial Card ── */
 .tcard {
   background: var(--card);
   border: 1px solid var(--border);
@@ -834,8 +863,9 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  transition: border-color .3s, box-shadow .3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
+
 .tcard::before {
   content: '';
   position: absolute;
@@ -843,59 +873,79 @@ img { max-width: 100%; height: auto; display: block; }
   height: 3px;
   background: linear-gradient(90deg, #b51733, var(--accent2));
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 .tcard:hover {
-  border-color: rgba(232,124,62,.3);
-  box-shadow: 0 16px 40px rgba(0,0,0,.5);
+  border-color: rgba(232,124,62,0.3);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5);
 }
 .tcard:hover::before { opacity: 1; }
 
+/* Big quote mark */
 .big-q {
   position: absolute;
   top: 10px; right: 14px;
   font-size: 44px;
   font-family: Georgia, serif;
-  color: rgba(255,255,255,.035);
+  color: rgba(255,255,255,0.035);
   line-height: 1;
   user-select: none;
 }
+
+/* Card header: avatar + name */
 .ch { display: flex; align-items: center; gap: 11px; }
+
 .av {
   width: 42px; height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;   /* Poppins for initial */
   font-size: 16px;
   font-weight: 700;
   color: #fff;
   flex-shrink: 0;
   text-transform: uppercase;
 }
+
 .mt { flex: 1; min-width: 0; }
+
 .nm {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;   /* Poppins SemiBold for name */
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .co {
+  font-family: 'Inter', sans-serif;     /* Inter for course label */
   font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: .14em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #b51733;
   margin-top: 2px;
 }
+
 .stars { display: flex; gap: 2px; margin-top: 4px; }
-.star { color: var(--star); font-size: 11px; }
-.star.e { opacity: .25; }
-.bt { font-size: 13px; line-height: 1.75; color: #aaa; font-style: italic; }
+.star   { color: var(--star); font-size: 11px; }
+.star.e { opacity: 0.25; }
+
+/* Review body text — Inter */
+.bt {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.78;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Card footer */
 .cf {
   display: flex;
   align-items: center;
@@ -903,8 +953,75 @@ img { max-width: 100%; height: auto; display: block; }
   border-top: 1px solid var(--border);
   padding-top: 10px;
 }
-.vf { font-size: 10.5px; color: #4caf50; font-weight: 500; }
+
+.vf {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: #4caf50;
+}
+
 .sp { font-size: 12px; color: var(--muted); }
+
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+/* Large tablet */
+@media (max-width: 1024px) {
+  .cols-wrap {
+    height: 560px;
+    gap: 16px;
+  }
+  .cols-outer { padding: 0 20px; }
+}
+
+/* Tablet — hide 3rd column */
+@media (max-width: 768px) {
+  .cols-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    height: 520px;
+    gap: 14px;
+  }
+
+  /* Hide 3rd column on tablet */
+  .col:nth-child(3) { display: none; }
+
+  .sec-head { padding: 48px 20px 32px; }
+  .sec-head h2 { font-size: clamp(22px, 6vw, 34px); }
+  .sub { font-size: 14px; }
+}
+
+/* Mobile — single column, static (no scroll animation) */
+@media (max-width: 500px) {
+  .cols-wrap {
+    grid-template-columns: 1fr;
+    height: auto;              /* let content breathe */
+    overflow: visible;         /* show all cards */
+    padding-bottom: 40px;
+  }
+
+  /* Show only first column on mobile, static */
+  .col:nth-child(2),
+  .col:nth-child(3) { display: none; }
+
+  /* Stop animation on mobile */
+  .col { transform: none !important; }
+
+  /* Show only first set (not duplicates) */
+  .col > .tcard:nth-child(n+6) { display: none; }
+
+  .cols-outer::before,
+  .cols-outer::after { display: none; }  /* no fade needed */
+
+  .sec-head { padding: 40px 16px 24px; }
+  .cols-outer { padding: 0 16px; }
+
+  .tcard { padding: 18px 16px 14px; }
+  .bt { font-size: 13px; }
+  .nm { font-size: 13px; }
+}
 
 /* ══════════════════════════════════
    FOOTER
@@ -1863,4 +1980,29 @@ footer ul li a:hover { color: #b51733; }
   .form-field { padding: 2rem 0; }
   .form-footer { flex-direction: column; align-items: flex-start; }
   .btn-send { width: 100%; justify-content: center; }
+}
+
+
+/* top course */
+
+/* ── Top Courses fonts only ── */
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.card-body .btn-outline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
