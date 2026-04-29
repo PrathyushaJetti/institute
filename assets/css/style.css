@@ -151,7 +151,35 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: pointer;
 }
 .btn-nav-reg:hover { background: #b51834; }
+/* ── Mobile nav: float OVER content instead of pushing it down ── */
+@media (max-width: 991px) {
 
+  /* Make navbar a positioning anchor */
+  .navbar {
+    position: sticky;   /* already set — just keep it */
+    overflow: visible;  /* allow the dropdown to escape */
+  }
+
+  /* Float the open menu over the page */
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    position: absolute;
+    top: 60px;          /* match your navbar height */
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1001;
+    padding: 0.75rem 1.25rem 1.25rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-top: 1px solid #f0f0f0;
+    border-radius: 0 0 12px 12px;
+  }
+
+  /* Give navbar a containing block so absolute child is positioned inside it */
+  .navbar .container {
+    position: relative;
+  }
+}
 /* ══════════════════════════════════
    HERO SECTION
 ══════════════════════════════════ */
