@@ -1672,7 +1672,7 @@ footer ul li a:hover { color: #b51733; }
   .trending-links-section { padding: 36px 0 8px; }
   .trending-links-block { margin-bottom: 24px; }
   .trending-links-block h4 {
-    color: #b51733;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 12px;
@@ -1692,7 +1692,7 @@ footer ul li a:hover { color: #b51733; }
     transition: color 0.2s;
     white-space: nowrap;
   }
-  .trending-links-list a:hover { color: #b51733; }
+  .trending-links-list a:hover { color: #fff; }
   .trending-links-list .sep {
     color: #fff;
     margin: 0 8px;
@@ -1702,7 +1702,7 @@ footer ul li a:hover { color: #b51733; }
  
   /* ── Disclaimer ── */
   .disclaimer-block {
-    border-top: 1px solid #b51733;
+    border-top: 1px solid #fff;
     padding: 24px 0 0;
     margin-top: 8px;
   }
@@ -1712,7 +1712,7 @@ footer ul li a:hover { color: #b51733; }
     line-height: 1.8;
     margin-bottom: 8px;
   }
-  .disclaimer-block strong { color: #b51733; }
+  .disclaimer-block strong { color: #fff; }
  
   /* ── Copyright bar ── */
   .f-copy {

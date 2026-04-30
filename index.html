@@ -1,24 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frame school of design</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/community.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frame school of design</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/community.css">
-</head>
-
-<body>
-
-  <!-- TOP BAR -->
-  <!-- <div class="top-bar">
+  <body>
+    <!-- TOP BAR -->
+    <!-- <div class="top-bar">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="d-flex gap-4 flex-wrap">
@@ -30,446 +42,809 @@
   </div>
 </div> -->
 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="brand-logo" href="#">
+          <img src="./assets/img/logo-1.png" />
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Frame</a>
+            </li>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="brand-logo" href="#">
-        <img src="./assets/img/logo-1.png">
-      </a>
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navMain">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav mx-auto gap-1">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Frame</a></li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Courses</a>
-            <ul class="dropdown-menu">
-              <li><a href="./ppp.html">ppp</a></li>
-              <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
-              <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
-              <li><a class="dropdown-item" href="#">Full Stack Development</a></li>
-              <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-              <li><a class="dropdown-item" href="#">Python</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Placements</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-        </ul>
-        <div class="d-flex gap-3 mt-3 mt-lg-0 align-items-center">
-          <!-- <button class="btn-nav-login">Login</button> -->
-          <a href="enrollng-now.html" class="btn-nav-reg">Enroll</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <!-- ========== UPDATED HERO SECTION ========== -->
-
-  <section class="hero-section">
-
-    <div class="container">
-      <div class="row align-items-center">
-
-        <!-- LEFT -->
-        <div class="col-lg-6">
-          <div class="hero-left">
-
-            <div class="hero-tag">
-              EST. 2014 • HYDERABAD, IN
-            </div>
-
-            <h1>
-              Learn UI/UX<br>
-              <span class="h1-enhance">Enhance <span class="h1-your">Your</span></span><br>
-              <span class="h1-creativity">Creativity</span>
-            </h1>
-
-            <p class="hero-para">
-              Start your UI/UX journey, master design principles, and unlock innovative thinking
-              to create user-friendly and visually stunning digital experiences.
-            </p>
-
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Our Courses</a
+              >
+              <ul class="dropdown-menu">
+                <!-- <li><a href="./ppp.html">ppp</a></li> -->
+                <li><a class="dropdown-item" href="#">Animation (2D/3D)</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Visual Effects (VFX)</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Game Design</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Digital & Graphic Design</a>
+                </li>
+                <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Film & Broadcasting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Interior Design</a></li>
+                <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Placements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-3 mt-3 mt-lg-0 align-items-center">
+            <!-- <button class="btn-nav-login">Login</button> -->
+            <a href="enrollng-now.html" class="btn-nav-reg">Enroll</a>
           </div>
         </div>
+      </div>
+    </nav>
 
-        <!-- RIGHT — badge is now INSIDE person-wrap -->
-        <div class="col-lg-6 hero-right">
-          <div class="person-wrap mx-auto">
+    <!-- HERO -->
+    <!-- ========== UPDATED HERO SECTION ========== -->
 
-            <img src="./assets/img/banner-two-img-1.png" alt="Hero Image">
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT -->
+          <div class="col-lg-6">
+            <div class="hero-left">
+              <div class="hero-tag">EST. 2014 • HYDERABAD, IN</div>
 
-            <!-- ✦ ROTATING BADGE — positioned over image bottom-right ✦ -->
-            <div class="hero-circle">
-              <svg class="hero-circle__ring" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <path id="textCircle" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0" />
-                </defs>
-                <text fill="#fcf6e8" font-size="10" font-family="inherit" font-weight="700" letter-spacing="2">
-                  <textPath href="#textCircle">
-                    APPLY NOW • SPRING 2026 • APPLY NOW •
-                  </textPath>
-                </text>
+              <h1>
+                Learn UI/UX<br />
+                <span class="h1-enhance"
+                  >Enhance <span class="h1-your">Your</span></span
+                ><br />
+                <span class="h1-creativity">Creativity</span>
+              </h1>
 
-              </svg>
+              <p class="hero-para">
+                Start your UI/UX journey, master design principles, and unlock
+                innovative thinking to create user-friendly and visually
+                stunning digital experiences.
+              </p>
+            </div>
+          </div>
 
-              <!-- Red star from your SVG -->
-              <svg class="hero-circle__star" viewBox="60 60 30 30" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#f75e52" d="M75.29,66.46l.46,1.36c1.02,3.02,3.4,5.4,6.42,6.42l1.36.46c.28.09.28.49,0,.59
+          <!-- RIGHT — badge is now INSIDE person-wrap -->
+          <div class="col-lg-6 hero-right">
+            <div class="person-wrap mx-auto">
+              <img src="./assets/img/banner-two-img-1.png" alt="Hero Image" />
+
+              <!-- ✦ ROTATING BADGE — positioned over image bottom-right ✦ -->
+              <div class="hero-circle">
+                <svg
+                  class="hero-circle__ring"
+                  viewBox="0 0 120 120"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <path
+                      id="textCircle"
+                      d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0"
+                    />
+                  </defs>
+                  <text
+                    fill="#fcf6e8"
+                    font-size="10"
+                    font-family="inherit"
+                    font-weight="700"
+                    letter-spacing="2"
+                  >
+                    <textPath href="#textCircle">
+                      APPLY NOW • SPRING 2026 • APPLY NOW •
+                    </textPath>
+                  </text>
+                </svg>
+
+                <!-- Red star from your SVG -->
+                <svg
+                  class="hero-circle__star"
+                  viewBox="60 60 30 30"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#f75e52"
+                    d="M75.29,66.46l.46,1.36c1.02,3.02,3.4,5.4,6.42,6.42l1.36.46c.28.09.28.49,0,.59
                    l-1.36.46c-3.02,1.02-5.4,3.4-6.42,6.42l-.46,1.36c-.09.28-.49.28-.59,0
                    l-.46-1.36c-1.02-3.02-3.4-5.4-6.42-6.42l-1.36-.46c-.28-.09-.28-.49,0-.59
-                   l1.36-.46c3.02-1.02,5.4-3.4,6.42-6.42l.46-1.36c.09-.28.49-.28.59,0Z" />
-              </svg>
+                   l1.36-.46c3.02-1.02,5.4-3.4,6.42-6.42l.46-1.36c.09-.28.49-.28.59,0Z"
+                  />
+                </svg>
+              </div>
+              <!-- END ROTATING BADGE -->
             </div>
-            <!-- END ROTATING BADGE -->
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ========== CSS TO ADD IN YOUR STYLESHEET ========== -->
+    <style>
+      /* Make the image wrapper position:relative so badge can anchor to it */
+      .person-wrap {
+        position: relative;
+        display: inline-block;
+        /* shrink-wraps around the image */
+      }
+
+      .person-wrap img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* ── Badge container ── */
+      .hero-circle {
+        position: absolute;
+        bottom: -7px;
+        /* hangs slightly below the image */
+        right: 405px;
+        /* hangs slightly outside the right edge */
+        width: 110px;
+        height: 110px;
+        background: #1a1a1a;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      /* Rotating text ring */
+      .hero-circle__ring {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        animation: badgeSpin 12s linear infinite;
+      }
+
+      /* Static red star in center */
+      .hero-circle__star {
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        z-index: 2;
+      }
+
+      @keyframes badgeSpin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* ── Responsive: tuck badge inside on small screens ── */
+      @media (max-width: 576px) {
+        .hero-circle {
+          width: 85px;
+          height: 85px;
+          bottom: -16px;
+          right: -16px;
+        }
+
+        .hero-circle__star {
+          width: 28px;
+          height: 28px;
+        }
+
+        .btn-arrow {
+          flex-shrink: 0;
+          transition: transform 0.25s;
+        }
+
+        .btn:hover .btn-arrow {
+          transform: translate(2px, -2px);
+        }
+      }
+    </style>
+    <!-- TOP COURSES -->
+    <section class="section">
+      <h2 class="section-title">Our Courses</h2>
+      <div class="cards-grid">
+        <!-- 3D Animation -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img
+              class="card-img"
+              src="./assets/img/3d-animation.jpg"
+              alt="3D Animation"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">3D Animation</h3>
+            <p class="card-desc">
+              Create stunning 3D characters, environments, and cinematic
+              animations using industry-standard tools.
+            </p>
+            <a href="#" class="btn btn-outline">
+              Know More
+              <svg
+                class="btn-arrow"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L13 1M13 1H4M13 1V10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
 
+        <!-- Visual Effects -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img
+              class="card-img"
+              src="./assets/img/New-Project-5.jpg"
+              alt="Visual Effects"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Visual Effects</h3>
+            <p class="card-desc">
+              Master professional VFX, compositing, and editing techniques for
+              films and digital media.
+            </p>
+            <a href="#" class="btn btn-outline">
+              Know More
+              <svg
+                class="btn-arrow"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L13 1M13 1H4M13 1V10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Game Design -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img
+              class="card-img"
+              src="./assets/img/New-Project-6.jpg"
+              alt="Game Design"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Game Design</h3>
+            <p class="card-desc">
+              Design immersive games, AR, and VR experiences with interactive
+              storytelling skills.
+            </p>
+            <a href="#" class="btn btn-outline">
+              Know More
+              <svg
+                class="btn-arrow"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L13 1M13 1H4M13 1V10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Digital Design -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img
+              class="card-img"
+              src="assets/img/multi-media.jpg"
+              alt="Digital Design & Graphic Design"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Digital Design &amp; Graphic Design</h3>
+            <p class="card-desc">
+              Build creative branding, digital artwork, and modern graphic
+              design for businesses.
+            </p>
+            <a href="#" class="btn btn-outline">
+              Know More
+              <svg
+                class="btn-arrow"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13L13 1M13 1H4M13 1V10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- GLOBAL IMPACT -->
+    <section class="gi-section rv">
+      <div class="container text-center">
+        <div class="gi-tag">GLOBAL IMPACT</div>
+        <h2 class="gi-title">Companies Hiring Frame</h2>
+        <p class="gi-subtitle">
+          Our alumni work with leading companies worldwide, delivering
+          real-world impact.
+        </p>
+      </div>
 
-  <!-- ========== CSS TO ADD IN YOUR STYLESHEET ========== -->
-  <style>
-    /* Make the image wrapper position:relative so badge can anchor to it */
-    .person-wrap {
-      position: relative;
-      display: inline-block;
-      /* shrink-wraps around the image */
-    }
+      <div class="gi-marquee-wrap">
+        <div class="gi-fade-l"></div>
+        <div class="gi-fade-r"></div>
 
-    .person-wrap img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
+        <!-- ROW 1 → forward -->
+        <div class="gi-lane">
+          <div class="gi-track fwd">
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-1.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-2.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-3.webp" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-4.webp" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-5.webp" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-6.png" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-7.png" alt="DXC" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-8.png" alt="CGI" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-9.webp" alt="Newgen" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-10.webp" alt="SOLIX" />
+            </div>
 
-    /* ── Badge container ── */
-    .hero-circle {
-      position: absolute;
-      bottom: -7px;
-      /* hangs slightly below the image */
-      right: 405px;
-      /* hangs slightly outside the right edge */
-      width: 110px;
-      height: 110px;
-      background: #1a1a1a;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 10;
-    }
+            <!-- duplicate set for seamless loop -->
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-1.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-2.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-3.webp" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-4.webp" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-5.webp" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-6.png" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-7.png" alt="DXC" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-8.png" alt="CGI" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-9.png" alt="Newgen" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-10.webp" alt="SOLIX" />
+            </div>
+          </div>
+        </div>
 
-    /* Rotating text ring */
-    .hero-circle__ring {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      animation: badgeSpin 12s linear infinite;
-    }
+        <!-- ROW 2 ← reverse -->
+        <div class="gi-lane">
+          <div class="gi-track rev">
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-12.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-13.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-14.webp" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-15.webp" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-16.webp" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-17.webp" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-18.webp" alt="DXC" />
+            </div>
+            <!-- duplicate -->
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-12.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-13.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-14.webp" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-15.webp" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-16.webp" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-17.webp" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-18.webp" alt="DXC" />
+            </div>
+          </div>
+        </div>
 
-    /* Static red star in center */
-    .hero-circle__star {
-      position: absolute;
-      width: 38px;
-      height: 38px;
-      z-index: 2;
-    }
+        <!-- ROW 3 → forward slow -->
+        <div class="gi-lane">
+          <div class="gi-track fwd2">
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-10.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-9.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-8.png" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-7.png" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-6.png" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-5.webp" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-4.webp" alt="DXC" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-3.webp" alt="CGI" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-2.webp" alt="Newgen" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-1.webp" alt="SOLIX" />
+            </div>
 
-    @keyframes badgeSpin {
-      from {
-        transform: rotate(0deg);
+            <!-- duplicate -->
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-10.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-9.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-8.png" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-7.png" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-6.png" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-5.webp" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-4.png" alt="DXC" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-3.png" alt="CGI" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-2.png" alt="Newgen" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-1.webp" alt="SOLIX" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 4 ← reverse slowest -->
+        <div class="gi-lane">
+          <div class="gi-track rev2">
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-13.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-15.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-16.webp" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-12.webp" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-14.webp" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-18.webp" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-17.webp" alt="DXC" />
+            </div>
+            <!-- duplicate -->
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-13.webp" alt="TCS" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-15.webp" alt="Accenture" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-16.webp" alt="Infosys" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-12.webp" alt="Cognizant" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-14.webp" alt="EPAM" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-18.webp" alt="ONPASSIVE" />
+            </div>
+            <div class="gi-logo">
+              <img src="./assets/img/brand-logo-17.webp" alt="DXC" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CSS ════ -->
+    <style>
+      /* Logo image */
+      .gi-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        min-width: 160px;
+        height: 72px;
       }
 
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* ── Responsive: tuck badge inside on small screens ── */
-    @media (max-width: 576px) {
-      .hero-circle {
-        width: 85px;
-        height: 85px;
-        bottom: -16px;
-        right: -16px;
-      }
-
-      .hero-circle__star {
-        width: 28px;
-        height: 28px;
-      }
-    }
-  </style>
-  <!-- TOP COURSES -->
-   <section class="section">
-    <h2 class="section-title">Our Courses</h2>
-    <div class="cards-grid">
-
-      <!-- 3D Animation -->
-      <div class="card">
-        <div class="card-img-wrap">
-          <img class="card-img" src="./assets/img/3d-animation.jpg" alt="3D Animation" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">3D Animation</h3>
-          <p class="card-desc">Create stunning 3D characters, environments, and cinematic animations using industry-standard tools.</p>
-          <a href="#" class="btn btn-outline">Know More +</a>
-        </div>
-      </div>
-
-      <!-- Visual Effects -->
-      <div class="card">
-        <div class="card-img-wrap">
-          <img class="card-img" src="./assets/img/New-Project-5.jpg" alt="Visual Effects" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Visual Effects</h3>
-          <p class="card-desc">Master professional VFX, compositing, and editing techniques for films and digital media.</p>
-          <a href="#" class="btn btn-outline">Know More +</a>
-        </div>
-      </div>
-
-      <!-- Game Design -->
-      <div class="card">
-        <div class="card-img-wrap">
-          <img class="card-img" src="./assets/img/New-Project-6.jpg" alt="Game Design" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Game Design</h3>
-          <p class="card-desc">Design immersive games, AR, and VR experiences with interactive storytelling skills.</p>
-          <a href="#" class="btn btn-outline">Know More +</a>
-        </div>
-      </div>
-
-      <!-- Digital Design -->
-      <div class="card">
-        <div class="card-img-wrap">
-          <img class="card-img" src="assets/img/multi-media.jpg" alt="Digital Design & Graphic Design" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Digital Design &amp; Graphic Design</h3>
-          <p class="card-desc">Build creative branding, digital artwork, and modern graphic design for businesses.</p>
-          <a href="#" class="btn btn-outline">Know More +</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- GLOBAL IMPACT -->
-  <section class="gi-section rv">
-    <div class="container text-center">
-      <div class="gi-tag"> GLOBAL IMPACT</div>
-      <h2 class="gi-title">Companies Hiring Frame</h2>
-      <p class="gi-subtitle">Our alumni work with leading companies worldwide, delivering real-world impact.</p>
-    </div>
-
-    <div class="gi-marquee-wrap">
-      <div class="gi-fade-l"></div>
-      <div class="gi-fade-r"></div>
-
-      <!-- ROW 1 → forward -->
-      <div class="gi-lane">
-        <div class="gi-track fwd">
-          <div class="gi-logo"><img src="./assets/img/brand-logo-1.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-2.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-3.webp" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-4.webp" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-5.webp" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-6.png" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-7.png" alt="DXC"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-8.png" alt="CGI"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-9.webp" alt="Newgen"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-10.webp" alt="SOLIX"></div>
-
-
-          <!-- duplicate set for seamless loop -->
-          <div class="gi-logo"><img src="./assets/img/brand-logo-1.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-2.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-3.webp" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-4.webp" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-5.webp" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-6.png" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-7.png" alt="DXC"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-8.png" alt="CGI"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-9.png" alt="Newgen"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-10.webp" alt="SOLIX"></div>
-
-
-        </div>
-      </div>
-
-      <!-- ROW 2 ← reverse -->
-      <div class="gi-lane">
-        <div class="gi-track rev">
-          <div class="gi-logo"><img src="./assets/img/brand-logo-12.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-13.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-14.webp" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-15.webp" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-16.webp" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-17.webp" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-18.webp" alt="DXC"></div>
-          <!-- duplicate -->
-          <div class="gi-logo"><img src="./assets/img/brand-logo-12.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-13.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-14.webp" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-15.webp" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-16.webp" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-17.webp" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-18.webp" alt="DXC"></div>
-        </div>
-      </div>
-
-      <!-- ROW 3 → forward slow -->
-      <div class="gi-lane">
-        <div class="gi-track fwd2">
-          <div class="gi-logo"><img src="./assets/img/brand-logo-10.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-9.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-8.png" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-7.png" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-6.png" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-5.webp" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-4.webp" alt="DXC"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-3.webp" alt="CGI"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-2.webp" alt="Newgen"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-1.webp" alt="SOLIX"></div>
-
-          <!-- duplicate -->
-          <div class="gi-logo"><img src="./assets/img/brand-logo-10.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-9.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-8.png" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-7.png" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-6.png" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-5.webp" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-4.png" alt="DXC"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-3.png" alt="CGI"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-2.png" alt="Newgen"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-1.webp" alt="SOLIX"></div>
-
-        </div>
-      </div>
-
-      <!-- ROW 4 ← reverse slowest -->
-      <div class="gi-lane">
-        <div class="gi-track rev2">
-          <div class="gi-logo"><img src="./assets/img/brand-logo-13.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-15.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-16.webp" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-12.webp" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-14.webp" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-18.webp" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-17.webp" alt="DXC"></div>
-          <!-- duplicate -->
-          <div class="gi-logo"><img src="./assets/img/brand-logo-13.webp" alt="TCS"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-15.webp" alt="Accenture"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-16.webp" alt="Infosys"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-12.webp" alt="Cognizant"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-14.webp" alt="EPAM"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-18.webp" alt="ONPASSIVE"></div>
-          <div class="gi-logo"><img src="./assets/img/brand-logo-17.webp" alt="DXC"></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ════ CSS ════ -->
-  <style>
-    /* Logo image */
-    .gi-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 24px;
-      min-width: 160px;
-      height: 72px;
-    }
-
-    .gi-logo img {
-      height: 36px;
-      width: auto;
-      max-width: 130px;
-      object-fit: contain;
-      /* filter: grayscale(1) brightness(2);
+      .gi-logo img {
+        height: 36px;
+        width: auto;
+        max-width: 130px;
+        object-fit: contain;
+        /* filter: grayscale(1) brightness(2);
     opacity: 0.6;
     transition: filter 0.3s ease, opacity 0.3s ease; */
-      /* fallback: hide broken images gracefully */
-      /* color: transparent; */
-    }
+        /* fallback: hide broken images gracefully */
+        /* color: transparent; */
+      }
 
-    .gi-logo img:hover {
-      filter: grayscale(0) brightness(1);
-      opacity: 1;
-    }
+      .gi-logo img:hover {
+        filter: grayscale(0) brightness(1);
+        opacity: 1;
+      }
 
-    /* Hide broken image icon if Clearbit fails */
-    .gi-logo img[src=""],
-    .gi-logo img:not([src]) {
-      display: none;
-    }
-  </style>
+      /* Hide broken image icon if Clearbit fails */
+      .gi-logo img[src=""],
+      .gi-logo img:not([src]) {
+        display: none;
+      }
+    </style>
 
+    <!-- TESTIMONIALS -->
+    <section class="gi-section rv">
+      <div class="container-fluid">
+        <div class="sec-head">
+          <div class="eyebrow">
+            <span>❝</span><span>Testimonials</span><span>❞</span>
+          </div>
+          <h2>What Our Students Say</h2>
+          <p class="sub">
+            Discover real success stories from our alumni who have transformed
+            their careers with DIGIT innovations.
+          </p>
+        </div>
 
-  <!-- TESTIMONIALS -->
-  <section class="gi-section rv">
-    <div class="container-fluid">
-      <div class="sec-head">
-        <div class="eyebrow"><span>❝</span><span>Testimonials</span><span>❞</span></div>
-        <h2>What Our Students Say</h2>
-        <p class="sub">Discover real success stories from our alumni who have transformed their careers with DIGIT
-          innovations.</p>
-      </div>
+        <div class="cols-outer">
+          <div class="cols-wrap" id="colsWrap"></div>
+        </div>
 
-      <div class="cols-outer">
-        <div class="cols-wrap" id="colsWrap"></div>
-      </div>
+        <script>
+          const all = [
+            {
+              name: "Sireesha Chavala",
+              course: "Java Full Stack",
+              rating: 5,
+              color: "#9b59b6",
+              text: "DIGIT is the best innovations to learn technical skills. My trainer was Narasimha sir. He is so professional and well explained courses with real time examples and good atmosphere to learn.",
+            },
+            {
+              name: "Geetha Palisetti",
+              course: "AWS Cloud",
+              rating: 5,
+              color: "#2ecc71",
+              text: "DIGIT innovations is one of the best innovations in Hyderabad. I joined to take training for AWS cloud. Trainers use real time examples which is very helpful and also very supportive in enhancing the skills and clarifying doubts. I highly recommend!",
+            },
+            {
+              name: "Sonu Praveen",
+              course: "UX Design",
+              rating: 4,
+              color: "#e67e22",
+              text: "If you're looking for an innovation to enhance your skills in IT, even if you are not familiar with IT, I personally recommend you to try DIGIT innovations. Here every class consists of limited students ensuring personal attention.",
+            },
+            {
+              name: "Naveen",
+              course: "Java Full Stack",
+              rating: 5,
+              color: "#3498db",
+              text: "Java full stack teaching staff was very skillful and have great knowledge regarding the subject, and one of the best innovations with proper training staff.",
+            },
+            {
+              name: "Chandu Allaka",
+              course: "Python Full Stack",
+              rating: 5,
+              color: "#e74c3c",
+              text: "I learned python full stack here. Harsha sir who is a real time trainer uses the most real time examples. I will definitely recommend DIGIT innovations for Python training. Thanks to DIGIT innovations!",
+            },
+            {
+              name: "Ashok Nela",
+              course: "UI Course",
+              rating: 5,
+              color: "#1abc9c",
+              text: "I am learning UI course in DIGIT innovations Madhapur. Overall best innovations I chose after searching a lot in IT corridors. Highly recommended!",
+            },
+            {
+              name: "Vinay Sai Charan",
+              course: "Java Full Stack",
+              rating: 5,
+              color: "#16a085",
+              text: "Java full stack teaching staff was very skillful and have great knowledge regarding the subject, and one of the best innovations with proper training staff.",
+            },
+            {
+              name: "Srinivas Mailaram",
+              course: "Java Full Stack",
+              rating: 5,
+              color: "#8e44ad",
+              text: "I have taken UI Development with Internship program at DIGIT. Trainers are working professionals and especially my trainer explained the concepts very clearly. I am coming from a mechanical background with no prior programming knowledge — DIGIT transformed my career.",
+            },
+            {
+              name: "Vamsi Ethamukkala",
+              course: "Java Full Stack",
+              rating: 5,
+              color: "#27ae60",
+              text: "I pursued Java FullStack coaching from DIGIT innovations and I've had a really positive experience. Our instructor Tirupathi Rao is very engaging and thoughtful. He always encourages his students to try hard and ensures success by whatever means necessary.",
+            },
+            {
+              name: "Usha Eti",
+              course: "UI Internship",
+              rating: 4,
+              color: "#c0392b",
+              text: "Completed UI Internship and had a real-time experience with Trainer and DIGIT innovations. Excellent atmosphere for learning and growing.",
+            },
+            {
+              name: "Devendra",
+              course: "Java Microservices",
+              rating: 5,
+              color: "#d35400",
+              text: "Thank you very much Krishna sir for helping. Praneeth sir explained Microservices very well with real time standards. I would strongly recommend Praneeth sir for Java Microservices for teaching complex topics in a very simple way.",
+            },
+            {
+              name: "Rajesh Sunkara",
+              course: "Java Course",
+              rating: 5,
+              color: "#2980b9",
+              text: "DIGIT innovations is one of the best platforms for learning and improving technical skills. 2 months in and I've learnt many things. The management and staff helped me a lot to prepare and the course is incredible.",
+            },
+            {
+              name: "Divya Bantumilli",
+              course: "UI Internship",
+              rating: 5,
+              color: "#f39c12",
+              text: "I recently completed a UI internship course at DIGIT innovations. UI sir was really nice, the curriculum covered everything and it was an incredible experience. DIGIT is the best learning platform in Hyderabad.",
+            },
+            {
+              name: "Praneeth Kumar",
+              course: "Java Microservices",
+              rating: 5,
+              color: "#6c5ce7",
+              text: "Thank you very much Krishna sir for helping. Praneeth sir explained Microservices very well with real time standards. I would strongly believe in DIGIT innovations for technical growth.",
+            },
+            {
+              name: "Rasion Tirupathi",
+              course: "AWS Azure",
+              rating: 5,
+              color: "#00b894",
+              text: "After joining the course I was able to understand very well. Rasion Tirupathi Rao sir is a very good teacher with a great management system. Thank you for your support sir.",
+            },
+          ];
 
-      <script>
-        const all = [
-          { name: "Sireesha Chavala", course: "Java Full Stack", rating: 5, color: "#9b59b6", text: "DIGIT is the best innovations to learn technical skills. My trainer was Narasimha sir. He is so professional and well explained courses with real time examples and good atmosphere to learn." },
-          { name: "Geetha Palisetti", course: "AWS Cloud", rating: 5, color: "#2ecc71", text: "DIGIT innovations is one of the best innovations in Hyderabad. I joined to take training for AWS cloud. Trainers use real time examples which is very helpful and also very supportive in enhancing the skills and clarifying doubts. I highly recommend!" },
-          { name: "Sonu Praveen", course: "UX Design", rating: 4, color: "#e67e22", text: "If you're looking for an innovation to enhance your skills in IT, even if you are not familiar with IT, I personally recommend you to try DIGIT innovations. Here every class consists of limited students ensuring personal attention." },
-          { name: "Naveen", course: "Java Full Stack", rating: 5, color: "#3498db", text: "Java full stack teaching staff was very skillful and have great knowledge regarding the subject, and one of the best innovations with proper training staff." },
-          { name: "Chandu Allaka", course: "Python Full Stack", rating: 5, color: "#e74c3c", text: "I learned python full stack here. Harsha sir who is a real time trainer uses the most real time examples. I will definitely recommend DIGIT innovations for Python training. Thanks to DIGIT innovations!" },
-          { name: "Ashok Nela", course: "UI Course", rating: 5, color: "#1abc9c", text: "I am learning UI course in DIGIT innovations Madhapur. Overall best innovations I chose after searching a lot in IT corridors. Highly recommended!" },
-          { name: "Vinay Sai Charan", course: "Java Full Stack", rating: 5, color: "#16a085", text: "Java full stack teaching staff was very skillful and have great knowledge regarding the subject, and one of the best innovations with proper training staff." },
-          { name: "Srinivas Mailaram", course: "Java Full Stack", rating: 5, color: "#8e44ad", text: "I have taken UI Development with Internship program at DIGIT. Trainers are working professionals and especially my trainer explained the concepts very clearly. I am coming from a mechanical background with no prior programming knowledge — DIGIT transformed my career." },
-          { name: "Vamsi Ethamukkala", course: "Java Full Stack", rating: 5, color: "#27ae60", text: "I pursued Java FullStack coaching from DIGIT innovations and I've had a really positive experience. Our instructor Tirupathi Rao is very engaging and thoughtful. He always encourages his students to try hard and ensures success by whatever means necessary." },
-          { name: "Usha Eti", course: "UI Internship", rating: 4, color: "#c0392b", text: "Completed UI Internship and had a real-time experience with Trainer and DIGIT innovations. Excellent atmosphere for learning and growing." },
-          { name: "Devendra", course: "Java Microservices", rating: 5, color: "#d35400", text: "Thank you very much Krishna sir for helping. Praneeth sir explained Microservices very well with real time standards. I would strongly recommend Praneeth sir for Java Microservices for teaching complex topics in a very simple way." },
-          { name: "Rajesh Sunkara", course: "Java Course", rating: 5, color: "#2980b9", text: "DIGIT innovations is one of the best platforms for learning and improving technical skills. 2 months in and I've learnt many things. The management and staff helped me a lot to prepare and the course is incredible." },
-          { name: "Divya Bantumilli", course: "UI Internship", rating: 5, color: "#f39c12", text: "I recently completed a UI internship course at DIGIT innovations. UI sir was really nice, the curriculum covered everything and it was an incredible experience. DIGIT is the best learning platform in Hyderabad." },
-          { name: "Praneeth Kumar", course: "Java Microservices", rating: 5, color: "#6c5ce7", text: "Thank you very much Krishna sir for helping. Praneeth sir explained Microservices very well with real time standards. I would strongly believe in DIGIT innovations for technical growth." },
-          { name: "Rasion Tirupathi", course: "AWS Azure", rating: 5, color: "#00b894", text: "After joining the course I was able to understand very well. Rasion Tirupathi Rao sir is a very good teacher with a great management system. Thank you for your support sir." },
-        ];
-
-        function stars(n) {
-          return Array.from({ length: 5 }, (_, i) => `<span class="star${i >= n ? ' e' : ''} ">★</span>`).join('');
-        }
-        function card(d) {
-          return `<div class="tcard">
+          function stars(n) {
+            return Array.from(
+              { length: 5 },
+              (_, i) => `<span class="star${i >= n ? " e" : ""} ">★</span>`,
+            ).join("");
+          }
+          function card(d) {
+            return `<div class="tcard">
     <div class="big-q">"</div>
     <div class="ch">
       <div class="av" style="background:linear-gradient(135deg,${d.color},${d.color}55)">${d.name[0]}</div>
@@ -482,458 +857,579 @@
     <p class="bt">${d.text}</p>
     <div class="cf"><span class="vf">✔ Verified Student</span><span class="sp">✦</span></div>
   </div>`;
-        }
-
-        // Split into 3 columns
-        const wrap = document.getElementById('colsWrap');
-        const cols = [[], [], []];
-        all.forEach((d, i) => cols[i % 3].push(d));
-
-        cols.forEach((col, ci) => {
-          const div = document.createElement('div');
-          div.className = 'col';
-          // duplicate for seamless loop
-          const doubled = [...col, ...col];
-          div.innerHTML = doubled.map(card).join('');
-          wrap.appendChild(div);
-        });
-
-        // Auto scroll — odd columns go up, even columns go down
-        const colEls = wrap.querySelectorAll('.col');
-        const speeds = [0.5, 0.35, 0.45]; // px per frame
-
-        colEls.forEach((col, i) => {
-          const half = col.scrollHeight / 2;
-          let pos = i % 2 === 0 ? 0 : half; // start middle col from bottom half for variety
-
-          function animate() {
-            if (i % 2 === 0) {
-              pos += speeds[i] || 0.4;
-              if (pos >= half) pos = 0;
-              col.style.transform = `translateY(-${pos}px)`;
-            } else {
-              pos -= speeds[i] || 0.4;
-              if (pos <= 0) pos = half;
-              col.style.transform = `translateY(-${pos}px)`;
-            }
-            requestAnimationFrame(animate);
           }
 
-          // Pause on hover
-          col.addEventListener('mouseenter', () => col.dataset.paused = '1');
-          col.addEventListener('mouseleave', () => delete col.dataset.paused);
+          // Split into 3 columns
+          const wrap = document.getElementById("colsWrap");
+          const cols = [[], [], []];
+          all.forEach((d, i) => cols[i % 3].push(d));
 
-          let frame;
-          function loop() {
-            if (!col.dataset.paused) animate();
-            frame = requestAnimationFrame(loop);
-          }
+          cols.forEach((col, ci) => {
+            const div = document.createElement("div");
+            div.className = "col";
+            // duplicate for seamless loop
+            const doubled = [...col, ...col];
+            div.innerHTML = doubled.map(card).join("");
+            wrap.appendChild(div);
+          });
 
-          // Use a simple interval approach for clean control
-          let p = i % 2 === 0 ? 0 : half;
-          setInterval(() => {
-            if (col.dataset.paused) return;
-            if (i % 2 === 0) {
-              p += speeds[i] || 0.4;
-              if (p >= half) p = 0;
-            } else {
-              p -= speeds[i] || 0.4;
-              if (p <= 0) p = half;
+          // Auto scroll — odd columns go up, even columns go down
+          const colEls = wrap.querySelectorAll(".col");
+          const speeds = [0.5, 0.35, 0.45]; // px per frame
+
+          colEls.forEach((col, i) => {
+            const half = col.scrollHeight / 2;
+            let pos = i % 2 === 0 ? 0 : half; // start middle col from bottom half for variety
+
+            function animate() {
+              if (i % 2 === 0) {
+                pos += speeds[i] || 0.4;
+                if (pos >= half) pos = 0;
+                col.style.transform = `translateY(-${pos}px)`;
+              } else {
+                pos -= speeds[i] || 0.4;
+                if (pos <= 0) pos = half;
+                col.style.transform = `translateY(-${pos}px)`;
+              }
+              requestAnimationFrame(animate);
             }
-            col.style.transform = `translateY(-${p}px)`;
-          }, 16);
-        });
-      </script>
-    </div>
-  </section>
-  <!-- CTA -->
 
-  <section class="o-people">
-    <div>
-      <div class="o-people__content">
-        <div class="m-people-main">
+            // Pause on hover
+            col.addEventListener(
+              "mouseenter",
+              () => (col.dataset.paused = "1"),
+            );
+            col.addEventListener("mouseleave", () => delete col.dataset.paused);
 
-          <div class="m-people-main__top">
-            <h2 class="flame-mian-title">Our Community Of Doers</h2>
-          </div>
+            let frame;
+            function loop() {
+              if (!col.dataset.paused) animate();
+              frame = requestAnimationFrame(loop);
+            }
 
-          <div class="m-people-main__bottom">
+            // Use a simple interval approach for clean control
+            let p = i % 2 === 0 ? 0 : half;
+            setInterval(() => {
+              if (col.dataset.paused) return;
+              if (i % 2 === 0) {
+                p += speeds[i] || 0.4;
+                if (p >= half) p = 0;
+              } else {
+                p -= speeds[i] || 0.4;
+                if (p <= 0) p = half;
+              }
+              col.style.transform = `translateY(-${p}px)`;
+            }, 16);
+          });
+        </script>
+      </div>
+    </section>
+    <!-- CTA -->
 
-            <!-- BIG CARD -->
-            <div class="m-person" id="bigPerson" role="tabpanel" tabindex="0">
-              <div class="m-person__image">
-                <img id="bigImg" src="" alt="">
-              </div>
-              <div class="m-person__caption">
-                <div class="m-person__bio">
-                  <div class="m-person__category">
-                    <a href="#"><span id="bigCat"></span></a>
-                  </div>
-                  <div class="m-person__biocontent">
-                    <h3 class="m-person__name" id="bigName"></h3>
-                    <div id="bigMajors"></div>
-                  </div>
-                </div>
-                <div class="m-person__button">
-                  <p><a class="l_hp__overview_btn" href="#" id="bigBtn">Read More</a></p>
-                  <div id="bigEverlasting"></div>
-                </div>
-              </div>
+    <section class="o-people">
+      <div>
+        <div class="o-people__content">
+          <div class="m-people-main">
+            <div class="m-people-main__top">
+              <h2 class="flame-mian-title">Our Community Of Doers</h2>
             </div>
 
-            <!-- THUMB PANEL -->
-            <div class="m-people-thumbs" aria-label="People" role="tablist">
-              <div class="m-people-thumbs__content" id="thumbsContent"></div>
-            </div>
+            <div class="m-people-main__bottom">
+              <!-- BIG CARD -->
+              <div class="m-person" id="bigPerson" role="tabpanel" tabindex="0">
+                <div class="m-person__image">
+                  <img id="bigImg" src="" alt="" />
+                </div>
+                <div class="m-person__caption">
+                  <div class="m-person__bio">
+                    <div class="m-person__category">
+                      <a href="#"><span id="bigCat"></span></a>
+                    </div>
+                    <div class="m-person__biocontent">
+                      <h3 class="m-person__name" id="bigName"></h3>
+                      <div id="bigMajors"></div>
+                    </div>
+                  </div>
+                  <div class="m-person__button">
+                    <p>
+                      <a class="l_hp__overview_btn" href="#" id="bigBtn"
+                        >Read More</a
+                      >
+                    </p>
+                    <div id="bigEverlasting"></div>
+                  </div>
+                </div>
+              </div>
 
+              <!-- THUMB PANEL -->
+              <div class="m-people-thumbs" aria-label="People" role="tablist">
+                <div class="m-people-thumbs__content" id="thumbsContent"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script>
-    const people = [
-      {
-        id: 'p46', cat: 'Happenings', name: 'Ujjwal Kumar',
-        lines: ['Ujjwal Kumar at the India AI Impact Summit 2026'],
-        isMajor: false, btn: 'Read More',
-        img: './assets/img/community-1.jpg'
-      },
-      {
-        id: 'p45', cat: 'Happenings', name: 'Atharva Shrivastava',
-        lines: ['Interdisciplinarity, Indian Premier League, and International Sport'],
-        isMajor: false, btn: 'Read More',
-        img: './assets/img/community-2.jpg'
-      },
-      {
-        id: 'p44', cat: 'Happenings', name: 'Akshaya D',
-        lines: ['Akshaya D on Representing FLAME University at the Harvard Conference 2025'],
-        isMajor: false, btn: 'Read More',
-        img: './assets/img/community-3.jpg'
-      },
-      {
-        id: 'dc27', cat: 'Distinctive Combinations', name: 'Sanvi Madan',
-        lines: [['Environmental Studies', '#', 'Major'], ['Public Policy', '#', 'Minor']],
-        isMajor: true, btn: 'Read More',
-        img: './assets/img/community-4.jpg'
-      },
-      {
-        id: 'dc3', cat: 'Distinctive Combinations', name: 'Nandini Mehta',
-        lines: [['Economics', '#', 'Major'], ['Finance', '#', 'Minor']],
-        isMajor: true, btn: 'Read More',
-        img: './assets/img/community-5.jpg'
-      },
-      {
-        id: 'dc2', cat: 'Distinctive Combinations', name: 'Saumya Sampath',
-        lines: [['International Studies', '#', '&'], ['Digital Marketing', '#', 'Major']],
-        isMajor: true, btn: 'Read More',
-        img: './assets/img/community-6.jpg'
-      },
-      {
-        id: 'a3', cat: 'Alumni in Focus', name: 'Taanya Malhotra',
-        lines: ['Major: Film & TV', 'Minor: Advertising & Branding'],
-        isMajor: false, btn: 'Know More',
-        img: './assets/img/community-7.jpg'
-      },
-      {
-        id: 'a2', cat: 'Alumni in Focus', name: 'Vrinda Chokhani',
-        lines: ['Major: Finance', 'Minor: Economics'],
-        isMajor: false, btn: 'Know More',
-        img: './assets/img/community-8.jpg'
-      },
-      {
-        id: 'a1', cat: 'Alumni in Focus', name: 'Aditya Ashok Balu',
-        lines: ['Major: International Studies', 'Minor: Environmental Studies'],
-        isMajor: false, btn: 'Know More',
-        img: './assets/img/community-9.jpg'
-      },
-      {
-        id: 'sb30', cat: 'Study Abroad Stories', name: 'Rajvi Jhaveri',
-        lines: ['Frame School of Design', 'Semester abroad — School of Business'],
-        isMajor: false, btn: 'Know More',
-        img: './assets/img/community-10.jpg'
-      },
-      {
-        id: 'sb29', cat: 'Study Abroad Stories', name: 'Dhriti Sumanth',
-        lines: ['Frame School of Design', 'Semester abroad @Wellesley College, USA'],
-        isMajor: false, btn: 'Know More',
-        img: './assets/img/community-1.jpg'
-      },
-      {
-        id: 'sb3', cat: 'Study Abroad Stories', name: 'Manojna Lanka',
-        lines: ['Frame School of Design', 'Semester abroad @Wellesley College, USA'],
-        isMajor: false, btn: 'Know More',
-        img: './assets/img/community-2.jpg'
-      },
-    ];
+    <script>
+      const people = [
+        {
+          id: "p46",
+          cat: "Happenings",
+          name: "Ujjwal Kumar",
+          lines: ["Ujjwal Kumar at the India AI Impact Summit 2026"],
+          isMajor: false,
+          btn: "Read More",
+          img: "./assets/img/community-1.jpg",
+        },
+        {
+          id: "p45",
+          cat: "Happenings",
+          name: "Atharva Shrivastava",
+          lines: [
+            "Interdisciplinarity, Indian Premier League, and International Sport",
+          ],
+          isMajor: false,
+          btn: "Read More",
+          img: "./assets/img/community-2.jpg",
+        },
+        {
+          id: "p44",
+          cat: "Happenings",
+          name: "Akshaya D",
+          lines: [
+            "Akshaya D on Representing FLAME University at the Harvard Conference 2025",
+          ],
+          isMajor: false,
+          btn: "Read More",
+          img: "./assets/img/community-3.jpg",
+        },
+        {
+          id: "dc27",
+          cat: "Distinctive Combinations",
+          name: "Sanvi Madan",
+          lines: [
+            ["Environmental Studies", "#", "Major"],
+            ["Public Policy", "#", "Minor"],
+          ],
+          isMajor: true,
+          btn: "Read More",
+          img: "./assets/img/community-4.jpg",
+        },
+        {
+          id: "dc3",
+          cat: "Distinctive Combinations",
+          name: "Nandini Mehta",
+          lines: [
+            ["Economics", "#", "Major"],
+            ["Finance", "#", "Minor"],
+          ],
+          isMajor: true,
+          btn: "Read More",
+          img: "./assets/img/community-5.jpg",
+        },
+        {
+          id: "dc2",
+          cat: "Distinctive Combinations",
+          name: "Saumya Sampath",
+          lines: [
+            ["International Studies", "#", "&"],
+            ["Digital Marketing", "#", "Major"],
+          ],
+          isMajor: true,
+          btn: "Read More",
+          img: "./assets/img/community-6.jpg",
+        },
+        {
+          id: "a3",
+          cat: "Alumni in Focus",
+          name: "Taanya Malhotra",
+          lines: ["Major: Film & TV", "Minor: Advertising & Branding"],
+          isMajor: false,
+          btn: "Know More",
+          img: "./assets/img/community-7.jpg",
+        },
+        {
+          id: "a2",
+          cat: "Alumni in Focus",
+          name: "Vrinda Chokhani",
+          lines: ["Major: Finance", "Minor: Economics"],
+          isMajor: false,
+          btn: "Know More",
+          img: "./assets/img/community-8.jpg",
+        },
+        {
+          id: "a1",
+          cat: "Alumni in Focus",
+          name: "Aditya Ashok Balu",
+          lines: [
+            "Major: International Studies",
+            "Minor: Environmental Studies",
+          ],
+          isMajor: false,
+          btn: "Know More",
+          img: "./assets/img/community-9.jpg",
+        },
+        {
+          id: "sb30",
+          cat: "Study Abroad Stories",
+          name: "Rajvi Jhaveri",
+          lines: [
+            "Frame School of Design",
+            "Semester abroad — School of Business",
+          ],
+          isMajor: false,
+          btn: "Know More",
+          img: "./assets/img/community-10.jpg",
+        },
+        {
+          id: "sb29",
+          cat: "Study Abroad Stories",
+          name: "Dhriti Sumanth",
+          lines: [
+            "Frame School of Design",
+            "Semester abroad @Wellesley College, USA",
+          ],
+          isMajor: false,
+          btn: "Know More",
+          img: "./assets/img/community-1.jpg",
+        },
+        {
+          id: "sb3",
+          cat: "Study Abroad Stories",
+          name: "Manojna Lanka",
+          lines: [
+            "Frame School of Design",
+            "Semester abroad @Wellesley College, USA",
+          ],
+          isMajor: false,
+          btn: "Know More",
+          img: "./assets/img/community-2.jpg",
+        },
+      ];
 
-    let active = 1, timer;
+      let active = 1,
+        timer;
 
-    function showPerson(idx) {
-      active = idx;
-      const p = people[idx];
+      function showPerson(idx) {
+        active = idx;
+        const p = people[idx];
 
-      const img = document.getElementById('bigImg');
-      img.style.transition = 'opacity .35s ease';
-      img.style.opacity = '0';
-      setTimeout(() => {
-        img.src = p.img;
-        img.alt = p.name;
-        img.onload = () => { img.style.opacity = '.85'; };
-        if (img.complete) img.style.opacity = '.85';
-      }, 200);
+        const img = document.getElementById("bigImg");
+        img.style.transition = "opacity .35s ease";
+        img.style.opacity = "0";
+        setTimeout(() => {
+          img.src = p.img;
+          img.alt = p.name;
+          img.onload = () => {
+            img.style.opacity = ".85";
+          };
+          if (img.complete) img.style.opacity = ".85";
+        }, 200);
 
-      document.getElementById('bigCat').textContent = p.cat;
-      document.getElementById('bigCat').parentElement.href = '#';
-      document.getElementById('bigName').textContent = p.name;
-      document.getElementById('bigBtn').textContent = p.btn;
-      document.getElementById('bigBtn').href = '#';
+        document.getElementById("bigCat").textContent = p.cat;
+        document.getElementById("bigCat").parentElement.href = "#";
+        document.getElementById("bigName").textContent = p.name;
+        document.getElementById("bigBtn").textContent = p.btn;
+        document.getElementById("bigBtn").href = "#";
 
-      /* everlasting — hidden, no broken image */
-      document.getElementById('bigEverlasting').innerHTML = '';
+        /* everlasting — hidden, no broken image */
+        document.getElementById("bigEverlasting").innerHTML = "";
 
-      const mEl = document.getElementById('bigMajors');
-      mEl.innerHTML = p.isMajor
-        ? p.lines.map(([s, h, t]) =>
-          `<p class="m-person__major"><a href="${h}">${s}</a> ${t}</p>`).join('')
-        : p.lines.map(l =>
-          `<p class="m-person__major">${l}</p>`).join('');
+        const mEl = document.getElementById("bigMajors");
+        mEl.innerHTML = p.isMajor
+          ? p.lines
+              .map(
+                ([s, h, t]) =>
+                  `<p class="m-person__major"><a href="${h}">${s}</a> ${t}</p>`,
+              )
+              .join("")
+          : p.lines.map((l) => `<p class="m-person__major">${l}</p>`).join("");
 
-      document.querySelectorAll('.m-people-thumbs__button').forEach((btn, i) => {
-        btn.setAttribute('aria-selected', i === idx ? 'true' : 'false');
-      });
-    }
+        document
+          .querySelectorAll(".m-people-thumbs__button")
+          .forEach((btn, i) => {
+            btn.setAttribute("aria-selected", i === idx ? "true" : "false");
+          });
+      }
 
-    function buildThumbs() {
-      const c = document.getElementById('thumbsContent');
-      c.innerHTML = people.map((p, i) => `
+      function buildThumbs() {
+        const c = document.getElementById("thumbsContent");
+        c.innerHTML = people
+          .map(
+            (p, i) => `
     <button class="m-people-thumbs__button"
       style="background-image:url('${p.img}');"
-      aria-selected="${i === active ? 'true' : 'false'}"
+      aria-selected="${i === active ? "true" : "false"}"
       role="tab" tabindex="0" data-idx="${i}" title="${p.name}">
       <span class="sr-only">${p.name}</span>
-    </button>`).join('');
+    </button>`,
+          )
+          .join("");
 
-      c.querySelectorAll('.m-people-thumbs__button').forEach(btn => {
-        btn.addEventListener('click', () => {
-          clearInterval(timer);
-          showPerson(+btn.dataset.idx);
-          startAuto();
+        c.querySelectorAll(".m-people-thumbs__button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            clearInterval(timer);
+            showPerson(+btn.dataset.idx);
+            startAuto();
+          });
+        });
+      }
+
+      function startAuto() {
+        clearInterval(timer);
+        timer = setInterval(
+          () => showPerson((active + 1) % people.length),
+          4500,
+        );
+      }
+
+      buildThumbs();
+      showPerson(active);
+      startAuto();
+    </script>
+
+    <section class="cta-section rv">
+      <div class="container">
+        <h1>Ready to Start Your Design Career?</h1>
+        <p>
+          Join 1000+ students who transformed their skills with Frame. Enroll
+          today and get expert guidance, live projects, and placement support.
+        </p>
+        <button class="btn-cta">Enroll Now →</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <!-- Font Awesome in <head> -->
+
+    <!-- CSS -->
+
+    <!-- HTML -->
+
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <!-- Brand col -->
+          <div class="col-lg-3">
+            <div class="f-brand">
+              <img src="./assets/img/footer-logo.png" alt="Frame Logo" />
+            </div>
+            <p class="f-desc">
+              Hyderabad's leading UI/UX & Design academy. Learn in Telugu, work
+              on live projects, and get placed in top companies.
+            </p>
+            <!-- REPLACE your .soc block with this -->
+            <div class="soc">
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-lg-3">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Frame</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Placements</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Courses -->
+          <div class="col-6 col-lg-2">
+            <h5>Courses</h5>
+            <ul>
+              <li><a href="#">Animation (2D/3D)</a></li>
+              <li><a href="#">Visual Effects (VFX)</a></li>
+              <li><a href="#">Game Design</a></li>
+              <li><a href="#">Digital & Graphic Design</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Film & Broadcasting</a></li>
+              <li><a href="#">Interior Design</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+            </ul>
+          </div>
+          <!-- ④ Community — NEW COLUMN -->
+          <div class="col-lg-2 col-md-3 col-6">
+            <h5>Community</h5>
+            <ul>
+              <li><a href="#">Student Projects</a></li>
+              <li><a href="#">Alumni Stories</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-2">
+            <h5>Contact Us</h5>
+            <ul>
+              <li>
+                <a href="mailto:Info@beetsl.com">
+                  <i class="fas fa-envelope"></i> Info@beetsl.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+919000694173">
+                  <i class="fas fa-phone"></i> +91 9000-694-173
+                </a>
+              </li>
+              <li>
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                  2nd Floor, Greenland Colony, Gachibowli, Hyderabad
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /row -->
+
+        <hr class="f-hr" />
+      </div>
+      <!-- /container -->
+
+      <!-- Trending section — OUTSIDE .container so it spans full width -->
+      <div class="trending-links-section">
+        <div class="container">
+          <!-- COURSES -->
+          <div class="trending-links-block">
+            <h4>Trending Courses</h4>
+            <!-- FIX: use <a> tags separated by .sep spans, NOT a plain <p> -->
+            <div class="trending-links-list">
+              <a href="#">CISSP Training</a><span class="sep">|</span>
+              <a href="#">CISA Training</a><span class="sep">|</span>
+              <a href="#">CISM Training</a><span class="sep">|</span>
+              <a href="#">Ethical Hacker Training</a><span class="sep">|</span>
+              <a href="#">CRISC Training</a><span class="sep">|</span>
+              <a href="#">CCSP Training</a><span class="sep">|</span>
+              <a href="#">CompTIA Security+ Training</a
+              ><span class="sep">|</span> <a href="#">AZ-500 Training</a
+              ><span class="sep">|</span>
+              <a href="#">Penetration Testing Training</a
+              ><span class="sep">|</span> <a href="#">CyberArk Training</a
+              ><span class="sep">|</span> <a href="#">CIPT Training</a
+              ><span class="sep">|</span> <a href="#">CIPM Training</a
+              ><span class="sep">|</span>
+              <a href="#">European Privacy (CIPP/E) Training</a
+              ><span class="sep">|</span>
+              <a href="#">ISO 27001 Lead Auditor Training</a
+              ><span class="sep">|</span> <a href="#">GDPR Training</a
+              ><span class="sep">|</span> <a href="#">AWS Combo Training</a
+              ><span class="sep">|</span> <a href="#">SailPoint Training</a
+              ><span class="sep">|</span>
+              <a href="#">Microsoft Sentinel Training</a
+              ><span class="sep">|</span> <a href="#">SOC Analyst Training</a
+              ><span class="sep">|</span> <a href="#">GRC Training</a
+              ><span class="sep">|</span>
+              <a href="#">Splunk Training Course</a>
+            </div>
+          </div>
+
+          <!-- CATEGORIES -->
+          <div class="trending-links-block">
+            <h4>Trending Categories</h4>
+            <div class="trending-links-list">
+              <a href="#">Governance Risk & Compliance Training</a
+              ><span class="sep">|</span>
+              <a href="#">Cloud Security Training Courses</a
+              ><span class="sep">|</span>
+              <a href="#">Cybersecurity Training Courses</a
+              ><span class="sep">|</span>
+              <a href="#">Information Security Training Courses</a
+              ><span class="sep">|</span> <a href="#">SOC Online Training</a
+              ><span class="sep">|</span>
+              <a href="#">Security Testing Training Programs</a
+              ><span class="sep">|</span>
+              <a href="#">Data Privacy Training Courses</a
+              ><span class="sep">|</span>
+              <a href="#">Network Security Training Courses</a
+              ><span class="sep">|</span>
+              <a href="#">Offensive Security Training Courses</a
+              ><span class="sep">|</span>
+              <a href="#">Defensive Security Training Courses</a>
+            </div>
+          </div>
+
+          <!-- RESOURCES -->
+          <div class="trending-links-block">
+            <h4>Trending Free Resources</h4>
+            <div class="trending-links-list">
+              <a href="#">Free Cybersecurity Training</a
+              ><span class="sep">|</span> <a href="#">Free Upcoming Bootcamps</a
+              ><span class="sep">|</span> <a href="#">Free Mock Tests</a
+              ><span class="sep">|</span> <a href="#">Latest Blogs</a
+              ><span class="sep">|</span>
+              <a href="#">Latest Cyber News</a>
+            </div>
+          </div>
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /trending-links-section -->
+
+      <div class="container">
+        <div class="disclaimer-block">
+          <p>
+            <strong>Disclaimer:</strong> Some of the graphics on our website are
+            from public domains and are freely available. This website may
+            include copyright content, use of which may not have been explicitly
+            authorized by the copyright owner. The names, trademarks, and brands
+            of all products are the property of their respective owners.
+          </p>
+          <p>All rights reserved. © 2026, Frame School of Design</p>
+        </div>
+        <p class="f-copy">
+          © 2025 Frame School of Design. All rights reserved. | Designed with in
+          Hyderabad
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Category tag toggle
+      document.querySelectorAll(".c-tag").forEach((b) => {
+        b.addEventListener("click", () => {
+          document
+            .querySelectorAll(".c-tag")
+            .forEach((x) => x.classList.remove("on"));
+          b.classList.add("on");
         });
       });
-    }
 
-    function startAuto() {
-      clearInterval(timer);
-      timer = setInterval(() => showPerson((active + 1) % people.length), 4500);
-    }
+      // Scroll reveal
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("show");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".rv").forEach((el) => obs.observe(el));
 
-    buildThumbs();
-    showPerson(active);
-    startAuto();
-  </script>
-
-
-  <section class="cta-section rv">
-    <div class="container">
-      <h1>Ready to Start Your Design Career?</h1>
-      <p>Join 1000+ students who transformed their skills with Frame. Enroll today and get expert guidance, live
-        projects, and placement support.</p>
-      <button class="btn-cta">Enroll Now →</button>
-    </div>
-  </section>
-
-
-  <!-- FOOTER -->
-
-  <!-- Font Awesome in <head> -->
-
-
-  <!-- CSS -->
-
-
-  <!-- HTML -->
-
-
-  <footer>
-    <div class="container">
-
-      <div class="row g-5">
-
-        <!-- Brand col -->
-        <div class="col-lg-4">
-          <div class="f-brand"><img src="./assets/img/footer-logo.png" alt="Frame Logo"></div>
-          <p class="f-desc">Hyderabad's leading UI/UX & Design academy. Learn in Telugu, work on live projects, and get
-            placed in top companies.</p>
-          <!-- REPLACE your .soc block with this -->
-          <div class="soc">
-            <a href="#" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-6 col-lg-2">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Frame</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Journey</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Courses -->
-        <div class="col-6 col-lg-3">
-          <h5>Courses</h5>
-          <ul>
-            <li><a href="#">UI/UX Designing</a></li>
-            <li><a href="#">Graphic Designing</a></li>
-            <li><a href="#">Full Stack Development</a></li>
-            <li><a href="#">Digital Marketing</a></li>
-            <li><a href="#">Python</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="col-lg-3">
-          <h5>Contact Us</h5>
-          <ul>
-            <li>
-              <a href="mailto:Info@beetsl.com">
-                <i class="fas fa-envelope"></i> Info@beetsl.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+919000694173">
-                <i class="fas fa-phone"></i> +91 9000-694-173
-              </a>
-            </li>
-            <li>
-              <span>
-                <i class="fas fa-map-marker-alt"></i>
-                2nd Floor, Greenland Colony, Gachibowli, Hyderabad
-              </span>
-            </li>
-          </ul>
-        </div>
-
-      </div><!-- /row -->
-
-      <hr class="f-hr" />
-
-    </div><!-- /container -->
-
-    <!-- Trending section — OUTSIDE .container so it spans full width -->
-    <div class="trending-links-section">
-      <div class="container">
-
-        <!-- COURSES -->
-        <div class="trending-links-block">
-          <h4>Trending Courses</h4>
-          <!-- FIX: use <a> tags separated by .sep spans, NOT a plain <p> -->
-          <div class="trending-links-list">
-            <a href="#">CISSP Training</a><span class="sep">|</span>
-            <a href="#">CISA Training</a><span class="sep">|</span>
-            <a href="#">CISM Training</a><span class="sep">|</span>
-            <a href="#">Ethical Hacker Training</a><span class="sep">|</span>
-            <a href="#">CRISC Training</a><span class="sep">|</span>
-            <a href="#">CCSP Training</a><span class="sep">|</span>
-            <a href="#">CompTIA Security+ Training</a><span class="sep">|</span>
-            <a href="#">AZ-500 Training</a><span class="sep">|</span>
-            <a href="#">Penetration Testing Training</a><span class="sep">|</span>
-            <a href="#">CyberArk Training</a><span class="sep">|</span>
-            <a href="#">CIPT Training</a><span class="sep">|</span>
-            <a href="#">CIPM Training</a><span class="sep">|</span>
-            <a href="#">European Privacy (CIPP/E) Training</a><span class="sep">|</span>
-            <a href="#">ISO 27001 Lead Auditor Training</a><span class="sep">|</span>
-            <a href="#">GDPR Training</a><span class="sep">|</span>
-            <a href="#">AWS Combo Training</a><span class="sep">|</span>
-            <a href="#">SailPoint Training</a><span class="sep">|</span>
-            <a href="#">Microsoft Sentinel Training</a><span class="sep">|</span>
-            <a href="#">SOC Analyst Training</a><span class="sep">|</span>
-            <a href="#">GRC Training</a><span class="sep">|</span>
-            <a href="#">Splunk Training Course</a>
-          </div>
-        </div>
-
-        <!-- CATEGORIES -->
-        <div class="trending-links-block">
-          <h4>Trending Categories</h4>
-          <div class="trending-links-list">
-            <a href="#">Governance Risk & Compliance Training</a><span class="sep">|</span>
-            <a href="#">Cloud Security Training Courses</a><span class="sep">|</span>
-            <a href="#">Cybersecurity Training Courses</a><span class="sep">|</span>
-            <a href="#">Information Security Training Courses</a><span class="sep">|</span>
-            <a href="#">SOC Online Training</a><span class="sep">|</span>
-            <a href="#">Security Testing Training Programs</a><span class="sep">|</span>
-            <a href="#">Data Privacy Training Courses</a><span class="sep">|</span>
-            <a href="#">Network Security Training Courses</a><span class="sep">|</span>
-            <a href="#">Offensive Security Training Courses</a><span class="sep">|</span>
-            <a href="#">Defensive Security Training Courses</a>
-          </div>
-        </div>
-
-        <!-- RESOURCES -->
-        <div class="trending-links-block">
-          <h4>Trending Free Resources</h4>
-          <div class="trending-links-list">
-            <a href="#">Free Cybersecurity Training</a><span class="sep">|</span>
-            <a href="#">Free Upcoming Bootcamps</a><span class="sep">|</span>
-            <a href="#">Free Mock Tests</a><span class="sep">|</span>
-            <a href="#">Latest Blogs</a><span class="sep">|</span>
-            <a href="#">Latest Cyber News</a>
-          </div>
-        </div>
-
-      </div><!-- /container -->
-    </div><!-- /trending-links-section -->
-
-    <div class="container">
-      <div class="disclaimer-block">
-        <p><strong>Disclaimer:</strong> Some of the graphics on our website are from public domains and are freely
-          available. This website may include copyright content, use of which may not have been explicitly authorized by
-          the copyright owner. The names, trademarks, and brands of all products are the property of their respective
-          owners.</p>
-        <p>All rights reserved. © 2026, Frame School of Design</p>
-      </div>
-      <p class="f-copy">© 2025 Frame School of Design. All rights reserved. | Designed with in Hyderabad</p>
-    </div>
-
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Category tag toggle
-    document.querySelectorAll('.c-tag').forEach(b => {
-      b.addEventListener('click', () => {
-        document.querySelectorAll('.c-tag').forEach(x => x.classList.remove('on'));
-        b.classList.add('on');
+      // Navbar white bg only when scrolled
+      window.addEventListener("scroll", () => {
+        document
+          .querySelector(".navbar")
+          .classList.toggle("scrolled", window.scrollY > 10);
       });
-    });
-
-    // Scroll reveal
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
-
-    // Navbar white bg only when scrolled
-    window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
