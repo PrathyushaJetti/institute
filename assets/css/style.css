@@ -585,7 +585,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 20px;
 }
 .gi-title {
-  font-size: clamp(1.5rem, 3.8vw, 2.5rem);
+  font-size: 56px;
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
@@ -786,7 +786,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .sec-head h2 {
   font-family: 'Poppins', sans-serif;   /* Poppins Bold heading */
-  font-size: clamp(26px, 4.5vw, 48px);
+  font-size: 56px;
   font-weight: 700;
   background:white ;
   -webkit-background-clip: text;
@@ -1195,7 +1195,7 @@ footer ul li a:hover { color: #b51733; }
 
 /* ── SECTION ── */
 .section{background:#111;padding:60px 20px 80px;}
-.section-title{text-align:center;font-size:clamp(26px,4vw,42px);font-weight:700;color:#fff;margin-bottom:48px;}
+.section-title{text-align:center;font-size:56px;font-weight:700;color:#fff;margin-bottom:48px;}
 
 /* ── GRID — gap between cards ── */
 .cards-grid{
@@ -1242,17 +1242,17 @@ footer ul li a:hover { color: #b51733; }
   text-decoration:none;
 }
 .btn-outline{background:transparent;border:2px solid #111;color:#111;}
-.card:hover .btn-outline{background:#8b0000;border-color:#8b0000;color:#fff;}
+.card:hover .btn-outline{background:#b51733;border-color:#b51733;color:#fff;}
 
-.btn-filled{background:#8b0000;border:2px solid #8b0000;color:#fff;}
+.btn-filled{background:#b51733;border:2px solid #b51733;color:#fff;}
 .card:hover .btn-filled{background:#6a0000;border-color:#6a0000;}
 
 /* Game Design active card */
-.card.active-card{background:#8b0000;}
+.card.active-card{background:#b51733;}
 .card.active-card .card-title{color:#fff;}
 .card.active-card .card-desc{color:rgba(255,255,255,.85);}
 .card.active-card .btn-outline{border-color:#fff;color:#fff;}
-.card.active-card:hover .btn-outline{background:#fff;border-color:#fff;color:#8b0000;}
+.card.active-card:hover .btn-outline{background:#fff;border-color:#fff;color:#b51733;}
 
 /* ── FABs ── */
 .fab{
@@ -1262,7 +1262,7 @@ footer ul li a:hover { color: #b51733; }
 }
 .fab:hover{transform:scale(1.1);}
 .fab-wa{bottom:80px;background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.5);}
-.fab-up{bottom:20px;background:#8b0000;font-size:18px;box-shadow:0 4px 14px rgba(139,0,0,.5);}
+.fab-up{bottom:20px;background:#b51733;font-size:18px;box-shadow:0 4px 14px rgba(139,0,0,.5);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
@@ -2015,6 +2015,7 @@ footer ul li a:hover { color: #b51733; }
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: white;
+  font-size: 56px;
 }
 
 .cta-section p {
