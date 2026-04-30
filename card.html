@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frame School of Design – Our Courses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&family=Barlow:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+
+    .section {
+      background: #111;
+      padding: 60px 20px 80px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 56px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 48px;
+      margin-top: -30px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    /* card itself is transparent — only body is white */
+    .card {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-img-wrap {
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 4/3;
+      flex-shrink: 0;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease;
+    }
+
+    .card:hover .card-img {
+      transform: scale(1.08);
+    }
+
+    /* white body below the image */
+    .card-body {
+      padding: 28px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background: #fff;
+    }
+
+    .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      text-align: center;
+      line-height: 1.25;
+      color: #111;
+    }
+
+    .card-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.7;
+      text-align: center;
+      color: #444;
+      flex: 1;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 18px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 0;
+      transition: background .25s, border-color .25s, color .25s;
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #111;
+      color: #111;
+    }
+
+    .card:hover .btn-outline {
+      background: #b51733;
+      border-color: #b51733;
+      color: #fff;
+    }
+
+    /* active card — red body */
+    .card.active-card .card-body {
+      background: #b51733;
+    }
+    .card.active-card .card-title { color: #fff; }
+    .card.active-card .card-desc  { color: rgba(255,255,255,.85); }
+    .card.active-card .btn-outline { border-color: #fff; color: #fff; }
+    .card.active-card:hover .btn-outline { background: #fff; border-color: #fff; color: #b51733; }
+
+    @media (max-width: 1024px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-title { font-size: 40px; }
+    }
+    @media (max-width: 600px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .section-title { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <h2 class="section-title">Our Courses</h2>
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="./assets/img/3d-animation.jpg" alt="3D Animation" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">3D Animation</h3>
+          <p class="card-desc">Create stunning 3D characters, environments, and cinematic animations using industry-standard tools.</p>
+          <a href="#" class="btn btn-outline">Know More +</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="./assets/img/New-Project-5.jpg" alt="Visual Effects" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Visual Effects</h3>
+          <p class="card-desc">Master professional VFX, compositing, and editing techniques for films and digital media.</p>
+          <a href="#" class="btn btn-outline">Know More +</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="./assets/img/New-Project-6.jpg" alt="Game Design" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Game Design</h3>
+          <p class="card-desc">Design immersive games, AR, and VR experiences with interactive storytelling skills.</p>
+          <a href="#" class="btn btn-outline">Know More +</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img class="card-img" src="assets/img/multi-media.jpg" alt="Digital Design & Graphic Design" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Digital Design &amp; Graphic Design</h3>
+          <p class="card-desc">Build creative branding, digital artwork, and modern graphic design for businesses.</p>
+          <a href="#" class="btn btn-outline">Know More +</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
